@@ -1,328 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IIIT UNA</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
-    <script
-      src="https://kit.fontawesome.com/3c880d7cdd.js"
-      crossorigin="anonymous"
-    ></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Life</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+
     <style>
-      .life {
-        text-align: left;
-        padding: 20px;
-      }
-      .campus-life {
-        margin-left: 30px;
-        margin-top: 40px;
-        text-align: justify;
-        width: 80%;
-        padding: 20px;
-      }
-      .clubs {
-        display: flex;
-        flex-direction: row;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 10px;
-      }
-     .clubsimage{
-      width: 15%;
-      height: 15%;
-      margin-left: 20px;
-     }
-      .video {
-        margin: auto;
-      }
+       #studentlife{
+        height: 280vh;
+       }
+    .campuslife {
+    /* border: 1px solid #ccc; */
+    margin-top: 80px;
+    padding: 20px;
+    width: 80%;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .campuslife h1, .campuslife h2 {
+    margin: 0;
+  }
+
+  .campuslife h1 {
+    font-size: 30px;
+    margin-top: 100px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    /* border-bottom: 2px solid #333; */
+  }
+
+  .campuslife h2 {
+    font-size: 30px;
+    margin: 0;
+    text-align: left;
+    border-left: 2px solid gray
+  }
+
+  .campuslife hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+
+  .campuslife p {
+    text-align: left;
+    width:80%;
+    font-size: 17px;
+    text-align: justify;
+    position: relative;
+  }
+  
+  .campuslife .clubs {
+    text-align: left;
+    width:100%;
+    text-align: justify;
+    position: relative;
+  }
+
+  .campuslife img {
+    max-width: 100px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    
+  }
+
+  .campuslife .image-right {
+    left: auto;
+    right: -200px;
+  }
+
+  @media (max-width: 768px) {
+    #studentlife{
+        height: auto;
+        width: 100%;
+       }
+    .campuslife {
+      flex-direction: columsn;
+      text-align: left;
+      width: 90%;
+    }
+
+    .campuslife h1, .campuslife h2 {
+      text-align: center;
+    }
+    .campuslife h2 {
+      text-align: left;
+    }
+
+    .campuslife img {
+      position: relative;
+      max-width: 100%;
+      width: 200px;
+      height: 150px;
+      margin: 30px auto;
+      left: 0;
+      right: 0;
+    }
+
+    .campuslife .image-right {
+      left: 0;
+      right: auto;
+    }
+
+    .campuslife p {
+    text-align: left;
+    width:100%;
+    text-align: justify;
+    position: relative;
+  }
+  }
     </style>
-  </head>
+</head>
 
-  <body>
-    <!-- header section -->
+<body>
 
-    <nav class="new-nav">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/en/c/cf/Iiit-una-logo.png"
-        alt="iiit una"
-      />
-      <div class="name">
-        <h1>भारतीय सूचना प्रौद्योगिकी संस्थान, ऊना</h1>
-        <h3>Indian Institute of Information Technology, Una</h3>
-      </div>
-      <img
-        src="https://www.iitb.ac.in/sites/www.iitb.ac.in/themes/touchm/logo_75.png"
-        alt="azadi ka amrit mahotsav"
-      />
-    </nav>
-    <div class="new-nav-links">
-      <!-- <a href="index.html" class="nav-link">HOME</a> -->
-      <div class="dropdown">
-        <button class="dropbtn"><a href="index.html"> HOME</a></button>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">ABOUT</button>
-        <div class="dropdown-content">
-          <a href="campus.html">Campus</a>
+    <!-- header section starts  -->
+
+    <header class="header" id="header">
+        <section class="wrapper nav">
+          <a href="./index.html" class="brand"><img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Iiit-una-logo.png"
+              alt="" style="height: 60px;"><p>भारतीय सूचना प्रौद्योगिकी संस्थान ऊना</p></a>
+          <div class="burger" id="burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </div>
+          <span class="overlay"></span>
+          <nav class="navbar" id="navbar">
+            <ul class="menu" id="menu">
+              <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+              <li class="menu-item menu-dropdown">
+                <span class="menu-link" data-toggle="submenu">About<i class="bx bx-chevron-down"></i></span>
+                <ul class="submenu">
+                  <li class="submenu-item"><a href="campus.html" class="submenu-link">Campus</a></li>
+                  <li class="submenu-item"><a href="labs.html" class="submenu-link">Labs</a></li>
+                  <li class="submenu-item"><a href="academics.html" class="submenu-link">Academics</a></li>
+                  <li class="submenu-item"><a href="placement.html" class="submenu-link">Placement</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-dropdown">
+                <span class="menu-link" data-toggle="submenu">Department<i class="bx bx-chevron-down"></i></span>
+                <ul class="submenu">
+                  <li class="submenu-item"><a href="courses.html" class="submenu-link">Courses</a></li>
+    
+                </ul>
+              </li>
+              <li class="menu-item menu-dropdown">
+                <span class="menu-link" data-toggle="submenu">Campus<i class="bx bx-chevron-down"></i></span>
+                <ul class="submenu">
+                  <li class="submenu-item"><a href="studentactivity.html" class="submenu-link">Students Activity</a></li>
+                  <li class="submenu-item"><a href="hostels.html" class="submenu-link">Hostels</a></li>
+    
+                </ul>
+              </li>
+              <li class="menu-item menu-dropdown">
+                <span class="menu-link" data-toggle="submenu">Contact<i class="bx bx-chevron-down"></i></span>
+                <ul class="submenu">
+                  <li class="submenu-item"><a href="complaint.html" class="submenu-link">Complaint</a></li>
+                  <li class="submenu-item"><a href="reach.html" class="submenu-link">How to Reach</a></li>
+                  <li class="submenu-item"><a href="contact.html" class="submenu-link">Contact Directory</a></li>
+                </ul>
+              </li>
+              <!-- <li class="menu-item"><a href="#" class="menu-link">Contact</a></li> -->
+            </ul>
+          </nav>
+        </section>
+      </header>
+    <section id="studentlife">
+      <div class="campuslife">
+        <div>
+          <h1>Student Culture</h1>
+       <br><br>
+          <h2>&nbsp;Clubs</h2>
          
-          <a href="lab.html">Labs</a>
-          <a href="campuslife.html">Student life</a>
-          <a href="academics.html">Academics</a>
-         
-          <a href="placement.html">Placement</a>
+          <p class="clubs">
+            Interested in something? There will be a club for it. If there isn't one, you can open your own. (assuming, of course, that you get enough people interested in the same activity) More importantly, you don't have to approach a professor for opening a club, you just put up a proposal in front of the "Students' Gymkhana"(composed almost entirely of students in executive positions). If the Gymkhana approves it, you are done.
+            
+          </p>
+        </div>
+        
+        
+      </div>
+      <div class="campuslife">
+        <div>
+          <h1>Cultural Council</h1><br>
+          <p style="border-left: 2px solid grey; font-size: 15px">
+            “A nation's culture resides in the hearts and in the soul of its
+            people.”- Mahatma Gandhi
+          </p>
+          <p class="clubs">
+            Interested in something? There will be a club for it. If there isn't one, you can open your own. (assuming, of course, that you get enough people interested in the same activity) More importantly, you don't have to approach a professor for opening a club, you just put up a proposal in front of the "Students' Gymkhana"(composed almost entirely of students in executive positions). If the Gymkhana approves it, you are done.
+           
+          </p>
         </div>
       </div>
-      <div class="dropdown">
-        <button class="dropbtn"><a href="courses.html">DEPARTMENT</a> </button>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn"><a href="">CAMPUS</a> </button>
-        <div class="dropdown-content">
-          <a href="studentactivity.html">Student Activities</a>
-          <a href="hostel.html">Hostels</a>
+      <div class="campuslife">
+        <div>
+          <br>
+          <h2>&nbsp;Eunoia</h2>
+          
+          <p>
+            To inculate the habit of literature reading and its various forms. To showcase and promote various cultural activities. Promoting the concept of flow & grow by providing a platform for students to enunciate their works,ideas, and beliefs. Debates on current national issues.
+            <img class="image-right" src="./Image/eunoia.jpeg" alt="Right Image">
+          </p>
         </div>
+        
+        
       </div>
-      <div class="dropdown">
-        <button class="dropbtn"><a href="icscs.html">ICIC3S</a> </button>
+      <div class="campuslife">
+        <div>
+          
+          <h2>&nbsp;Force</h2>
+        
+          <p>
+            Force: Forum for Computer Engineers Computer science society of IIIT Una Focuses on open source software technologies Bulding coding culture among student Encouraging students to participate in event such as Google summer of code(Gsoc) Organising hackathons on latest problems Workshops on web/app development and UI/U Conducting Seminars and webinars by industry experts
+            <img class="image-right" src="./Image/force.jpeg" alt="Right Image">
+          </p>
+        </div>
+        
+        
       </div>
-      <div class="dropdown">
-        <button class="dropbtn">CONTACT</button>
-        <div class="dropdown-content">
-          <a href="complaint.html">Complaint</a>
-          <a href="reach.html">How to reach</a>
-          <a href="contact.html">Contact Directory</a>
+      <div class="campuslife">
+        <div>
+          
+          <h2>&nbsp;Epmoc</h2>
+        
+          <p>
+            Works for creating a collaborative and inclusive environment amongst students Aims to organize events from different domains to encourage students to showcase their skills Bridging the gap between seniors and college alumni by social networks Conducting online workshops to improve debate, communication and interpersonal skills
+            <img class="image-right" src="./Image/epmoc.jpeg" alt="Right Image">
+          </p>
+        </div>
+        
+        
+      </div>
+      <div class="campuslife">
+        <div>
+          
+          <h2>&nbsp;Aavesh</h2>
          
+          <p>
+            Aavesh: The Electronics society Strives to help the students acquire new skills in the field of Electronics Exposure of latest tools and technologies to the members Conducting workshops and organising lectures from industry and academics Workshop on MATLAB,Simulink and Arduino
+            <img class="image-right" src="./Image/aavesh.jpeg" alt="Right Image">
+          </p>
         </div>
+        
+        
       </div>
+
+      <div class="campuslife">
+        <div>
+          
+          <h2>&nbsp;Pixcel</h2>
       
-    </div>
-    <section id="about-bottom">
-      <div class="about-bottom-container">
-        <div class="section-title">
-          <h2 style="font-size: 60px" class="life">
-            Life on Campus <span style="color: #f93"></span>
-          </h2>
-          <h3 class="life">
-            Culture is the widening of the mind and of the spirit.
-          </h3>
+          <p>
+            Celebrating vibrance in multitude of eye pleasing sights and breathtaking instances, Photography club aims to capture them all. It strives to provide opportunities to the students to hone their creative skills and create the photographs that speak their own word. Photography club has high grade equipment in terms of digital SLRs and lenses. It has a studio with all professional level setup.
+            <img class="image-right" src="./Image/pixcel.jpeg" alt="Right Image">
+          </p>
         </div>
+        
+        
       </div>
-      <div class="campus-life">
-        <h2 style="border-bottom: 2px solid #01579b">Student Culture</h2>
-        <p>
-          <strong
-            >It’s a good place to meet like- minded people and learn and grow
-            together. The campus community forms a close knit group and you make
-            friends for life here. The campus, the people and this life has made
-            a stronger and confident person.</strong
-          >
-        </p>
-        <h3 style="border-bottom: 1px solid #01579b">Clubs</h3>
-        <p>
-          Interested in something? There will be a club for it. If there isn't
-          one, you can open your own. (assuming, of course, that you get enough
-          people interested in the same activity) More importantly, you don't
-          have to approach a professor for opening a club, you just put up a
-          proposal in front of the "Students' Gymkhana"(composed almost entirely
-          of students in executive positions). If the Gymkhana approves it, you
-          are done.
-        </p>
 
-        <h2 style="border-bottom: 2px solid #01579b">Cultural Council</h2>
-        <p style="border-left: 2px solid grey; font-size: 15px">
-          “A nation's culture resides in the hearts and in the soul of its
-          people.”- Mahatma Gandhi
-        </p>
-        <p>
-          <strong
-            >The Cultural Council of the Students' Gymkhana organizes a plethora
-            of activities spanning over the whole year. With a calendar
-            punctuated by scores of workshops and classes over the year,
-            including the summers, the Council provides the students profuse
-            platforms to pursue various cultural genres, train themselves,
-            perform on stage or just appreciate various cultural arts. The
-            students are also given a chance to hone their skills and compete
-            with other prolific colleges in intercollegiate cultural festivals.
-            The council gives ample opportunities to the students to cement them
-            into the cultural scene at IIIT UNA through events like MRIDANG,
-            YALGAR, MERAKI and other club events.</strong
-          >
-        </p>
-        <h3 style="border-bottom: 1px solid #01579b">Eunoia</h3>
-        <div class="clubs">
-          <p style="width: 50%">
-            To inculate the habit of literature reading and its various forms.
-            To showcase and promote various cultural activities. Promoting the
-            concept of flow & grow by providing a platform for students to
-            enunciate their works,ideas, and beliefs. Debates on current
-            national issues.
+      <div class="campuslife">
+        <div>
+          <h1>Games and Sports Council</h1>
+        
+          <p class="clubs">
+            IIIT UNA is not just about academics but also has world class sports facilities. It has one cricket fields, a 400 metres track, separate floodlit football and hockey fields, floodlit basketball courts , volleyball and tennis courts, indoor basketball and badminton stadiums, indoor arenas for weightlifting and squash, a skating rink, a taekwondo arena, table tennis rooms, a yoga room, two well­equipped gymnasiums and the list goes on and on.
+            
           </p>
-          <img src="./images/eunoia.jpeg" alt="" class="clubsimage" />
         </div>
-        <h3 style="border-bottom: 1px solid #01579b">Force</h3>
-        <div class="clubs">
-          <p style="width: 50%">
-            Force: Forum for Computer Engineers Computer science society of IIIT
-            Una Focuses on open source software technologies Bulding coding
-            culture among student Encouraging students to participate in event
-            such as Google summer of code(Gsoc) Organising hackathons on latest
-            problems Workshops on web/app development and UI/U Conducting
-            Seminars and webinars by industry experts
-          </p>
-          <img src="./images/force.jpeg" alt="" class="clubsimage" />
-        </div>
-        <h3 style="border-bottom: 1px solid #01579b">Epmoc</h3>
-        <div class="clubs">
-          <p style="width: 50%">
-            Works for creating a collaborative and inclusive environment amongst
-            students Aims to organize events from different domains to encourage
-            students to showcase their skills Bridging the gap between seniors
-            and college alumni by social networks Conducting online workshops to
-            improve debate, communication and interpersonal skills
-          </p>
-          <img src="./images/epmoc.jpeg" alt="" class="clubsimage"/>
-        </div>
-        <h3 style="border-bottom: 1px solid #01579b">Aavesh</h3>
-        <div class="clubs">
-          <p style="width: 50%">
-            Aavesh: The Electronics society Strives to help the students acquire
-            new skills in the field of Electronics Exposure of latest tools and
-            technologies to the members Conducting workshops and organising
-            lectures from industry and academics Workshop on MATLAB,Simulink and
-            Arduino
-          </p>
-          <img src="./images/aavesh.jpeg" alt="" class="clubsimage" />
-        </div>
-        <h3 style="border-bottom: 1px solid #01579b">Pixcel</h3>
-        <div class="clubs">
-          <p style="width: 50%">
-            Celebrating vibrance in multitude of eye pleasing sights and
-            breathtaking instances, Photography club aims to capture them all.
-            It strives to provide opportunities to the students to hone their
-            creative skills and create the photographs that speak their own
-            word. Photography club has high grade equipment in terms of digital
-            SLRs and lenses. It has a studio with all professional level setup.
-          </p>
-          <img src="./images/pixcel.jpeg" alt="" class="clubsimage" />
-        </div>
-
-        <h2 style="border-bottom: 2px solid #01579b">
-          Games and Sports Council
-        </h2>
-
-        <p>
-          <strong
-            >IIIT UNA is not just about academics but also has world class
-            sports facilities. It has one cricket fields, a 400 metres track,
-            separate floodlit football and hockey fields, floodlit basketball
-            courts , volleyball and tennis courts, indoor basketball and
-            badminton stadiums, indoor arenas for weightlifting and squash, a
-            skating rink, a taekwondo arena, table tennis rooms, a yoga room,
-            two well­equipped gymnasiums and the list goes on and on.</strong
-          >
-        </p>
-
-        <h3 style="border-bottom: 1px solid #01579b">Gallery</h3>
-        <div class="gallery">
-          <img src="./images/yal1.jpeg" alt="" width="33%" height="30%" />
-          <img src="./images/yalg2.jpeg" alt="" width="33%" height="30%" />
-          <img src="./images/yalg3.jpeg" alt="" width="33%" height="30%" />
-          <!-- <img src="yal1.jpeg" alt=""width="30%" height="30%"> -->
-        </div>
+        
+        
       </div>
+
     </section>
 
-    <!-- footer section -->
-    <footer style="background: url(Speedline-50s-1846px.svg)">
-      <div class="content">
-        <div class="top">
-          <div class="logo-details">
-            <span>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY UNA</span>
+
+    <footer style="background:url(Image/Speedline-50s-1846px.svg)">
+        <div class="content">
+          <div class="top">
+            <div class="logo-details">
+              <span>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY UNA</span>
+            </div>
+           
           </div>
-          <div class="media-icons">
-            <a href="https://www.facebook.com/iiituna" target="_blank"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href=""><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://instagram.com/iiituna_" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://linkedin.com/" target="_blank"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
+          
+          <div class="link-boxes">
+            <ul class="box">
+              <li class="link_name">About</li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="index.html">About us</a></li>
+              <li><a href="labs.html">Labs</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Quick Links</li>
+              <li><a href="https://pgportal.gov.in/">CPGRAMS Portal</a></li>
+              <li><a href="campuslife.html">Campus Life</a></li>
+              <li><a href="reach.html">How to Reach</a></li>
+            </ul>
+            <ul class="box">
+             <li class="link_name">Student's Corner</li>
+             
+             <li><a href="complaint.html">Complaint Section</a></li>
+             <li><a href="academics.html">Academics</a></li>
+             <li><a href="placement.html">Placement</a></li>
+             
+           </ul> 
+            <ul class="box input-box">
+             <iframe
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.5655687846292!2d76.18850141440156!3d31.48113465622981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391adb198180014f%3A0xbf76347093a3aa9a!2sIndian%20Institute%20of%20Information%20Technology%20(IIIT)%20Una!5e0!3m2!1sen!2sin!4v1667841204364!5m2!1sen!2sin"
+            
+             style="border: 0"
+             allowfullscreen=""
+             loading="lazy"
+             referrerpolicy="no-referrer-when-downgrade"
+           ></iframe>
+            </ul>
           </div>
         </div>
-        <div class="link-boxes">
-          <ul class="box">
-            <li class="link_name">About</li>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-            <li><a href="#about-section">ABOUT US</a></li>
-            <li><a href="lab.html">LABS</a></li>
-          </ul>
-          <ul class="box">
-            <li class="link_name">Quick Links</li>
-            <li>
-              <a href="https://pgportal.gov.in/"
-                >CPGRAMS PORTAL</a
-              >
-            </li>
-            <li><a href="campuslife.html">CAMPUS LIFE</a></li>
-            <li><a href="reach.html">HOW TO REACH</a></li>
-          </ul>
-          <ul class="box">
-            <li class="link_name">Student's Corner</li>
-            <li><a href="complaint.html">COMPLAINT SECTION</a></li>
-            <li><a href="academics.html">ACADEMICS</a></li>
-            <li><a href="placement.html">PLACEMENT</a></li>
-          </ul>
-          <ul class="box-1">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.5655687846292!2d76.18850141440156!3d31.48113465622981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391adb198180014f%3A0xbf76347093a3aa9a!2sIndian%20Institute%20of%20Information%20Technology%20(IIIT)%20Una!5e0!3m2!1sen!2sin!4v1667841204364!5m2!1sen!2sin"
-              width="350"
-              height="250"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </ul>
+        <div class="bottom-details">
+          <div class="bottom_text">
+            <span class="copyright_text">Copyright © 2022 | Designed by Sharad Kumar</span>
+            <span class="policy_terms">
+             
+            </span>
+          </div>
         </div>
-      </div>
-    </footer>
-    <script>
-      const counters = document.querySelectorAll(".counter-box > h2");
-      let count1 = 0;
-      let count2 = 0;
-      counters[0].innerHTML = count1;
-      counters[1].innerHTML = count2;
-      const timer1 = setInterval(() => {
-        count1 += 1;
-        counters[0].innerHTML = `${count1} +`;
-        if (count1 > 150) {
-          clearInterval(timer1);
-        }
-      }, 0);
-      const timer2 = setInterval(() => {
-        count2 += 1;
-        counters[1].innerHTML = `${(count2 * 100) / 100} %`;
-        if (count2 > 95) {
-          clearInterval(timer2);
-        }
-      }, 0);
-    </script>
+      </footer>
+
+    <!--footer section ends -->
 
     <script>
-      let click = document.querySelector(".click");
-
-      let list = document.querySelector(".list");
-
-      click.addEventListener("click", () => {
-        list.classList.toggle("newlist");
-      });
+      const navbarMenu = document.getElementById("navbar");
+    const burgerMenu = document.getElementById("burger");
+    const overlayMenu = document.querySelector(".overlay");
+    
+    const toggleMenu = () => {
+       navbarMenu.classList.toggle("active");
+       overlayMenu.classList.toggle("active");
+    };
+    const collapseSubMenu = () => {
+       navbarMenu
+          .querySelector(".menu-dropdown.active .submenu")
+          .removeAttribute("style");
+       navbarMenu.querySelector(".menu-dropdown.active").classList.remove("active");
+    };
+    const toggleSubMenu = (e) => {
+       if (e.target.hasAttribute("data-toggle") && window.innerWidth <= 992) {
+          e.preventDefault();
+          const menuDropdown = e.target.parentElement;
+          if (menuDropdown.classList.contains("active")) {
+             collapseSubMenu();
+          } else {
+             if (navbarMenu.querySelector(".menu-dropdown.active")) {
+                collapseSubMenu();
+             }
+             menuDropdown.classList.add("active");
+             const subMenu = menuDropdown.querySelector(".submenu");
+             subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+          }
+       }
+    };
+    const resizeWindow = () => {
+       if (window.innerWidth > 992) {
+          if (navbarMenu.classList.contains("active")) {
+             toggleMenu();
+          }
+          if (navbarMenu.querySelector(".menu-dropdown.active")) {
+             collapseSubMenu();
+          }
+       }
+    };
+    burgerMenu.addEventListener("click", toggleMenu);
+    overlayMenu.addEventListener("click", toggleMenu);
+    navbarMenu.addEventListener("click", toggleSubMenu);
+    window.addEventListener("resize", resizeWindow);
+    
     </script>
-  </body>
+
+</body>
+
 </html>

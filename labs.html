@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="nav.js">
+    <style>
+        .section-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .sub-container {
+            flex-basis: 25%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #f9f9ff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            text-align: center;
+
+
+        }
+
+
+        .labsheading {
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 100px;
+
+        }
+
+        .labs-heading {
+            font-size: 30px;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .labs-heading {
+                font-size: 25px;
+            }
+
+            .labsheading {
+                font-size: 20px;
+                text-align: center;
+                padding: 20px;
+                /* margin-left: -10px; */
+                margin-top: 80px;
+            }
+        }
+
+        .sub-container:hover {
+            cursor: pointer;
+        }
+
+        .sub-container img {
+            max-width: 100%;
+            height: auto;
+
+        }
+
+        .sub-container h3 {
+            margin-top: 10px;
+        }
+
+        .sub-container p {
+            margin-top: 10px;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .section-container {
+                flex-direction: column;
+                margin-top: -30px;
+            }
+
+            .sub-container {
+                flex-basis: 100%;
+            }
+            .sub-container p {
+            font-size: 17px;
+        }
+        }
+
+
+
+        #experts {
+            padding: 8vw 8vw 0 8vw;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        #experts .expert-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 1rem;
+            margin-top: 50px;
+        }
+
+        #experts .expert-box .profile {
+            background: #fff3f3;
+            padding: 30px 10px;
+        }
+
+        .expert-box img {
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <header class="header" id="header">
+        <section class="wrapper nav">
+           <a href="./index.html" class="brand"><img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Iiit-una-logo.png" alt="" style="height: 60px;"><p>भारतीय सूचना प्रौद्योगिकी संस्थान ऊना</p></a>
+           <div class="burger" id="burger">
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+           </div>
+           <span class="overlay"></span>
+           <nav class="navbar" id="navbar">
+              <ul class="menu" id="menu">
+                 <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+                 <li class="menu-item menu-dropdown">
+                    <span class="menu-link" data-toggle="submenu">About<i class="bx bx-chevron-down"></i></span>
+                    <ul class="submenu">
+                       <li class="submenu-item"><a href="campus.html" class="submenu-link">Campus</a></li>
+                       <li class="submenu-item"><a href="labs.html" class="submenu-link">Labs</a></li>
+                       <li class="submenu-item"><a href="academics.html" class="submenu-link">Academics</a></li>
+                       <li class="submenu-item"><a href="placement.html" class="submenu-link">Placement</a></li>
+                    </ul>
+                 </li>
+                 <li class="menu-item menu-dropdown">
+                    <span class="menu-link" data-toggle="submenu">Department<i class="bx bx-chevron-down"></i></span>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="courses.html" class="submenu-link">Courses</a></li>
+
+                    </ul>
+                 </li>
+                 <li class="menu-item menu-dropdown">
+                    <span class="menu-link" data-toggle="submenu">Campus<i class="bx bx-chevron-down"></i></span>
+                    <ul class="submenu">
+                       <li class="submenu-item"><a href="studentactivity.html" class="submenu-link">Students Activity</a></li>
+                       <li class="submenu-item"><a href="hostels.html" class="submenu-link">Hostels</a></li>
+                      
+                    </ul>
+                 </li>
+                 <li class="menu-item menu-dropdown">
+                  <span class="menu-link" data-toggle="submenu">Contact<i class="bx bx-chevron-down"></i></span>
+                  <ul class="submenu">
+                     <li class="submenu-item"><a href="complaint.html" class="submenu-link">Complaint</a></li>
+                     <li class="submenu-item"><a href="reach.html" class="submenu-link">How to Reach</a></li>
+                     <li class="submenu-item"><a href="contact.html" class="submenu-link">Contact Directory</a></li>
+                  </ul>
+               </li>
+                 <!-- <li class="menu-item"><a href="#" class="menu-link">Contact</a></li> -->
+              </ul>
+           </nav>
+        </section>
+     </header>
+     
+    <div class="labsheading">
+        <h1 class="labs-heading">Labs</h1>
+        <p>All labs are built with full security and saftey, all labs have good WiFi connectivity.</p>
+    </div>
+    <div class="section-container">
+       
+        <div class="sub-container">
+            <img src="./Image/software.jpg" alt="Image 1">
+            <h3>Software Lab</h3>
+            <p>Software labs are dynamic spaces where students and professionals engage in coding, software development,
+                and computer simulations. Equipped with computers, programming tools, and testing environments, these
+                labs
+                provide hands-on experience in creating and refining software applications. Participants collaborate on
+                projects, learn programming languages, and explore emerging technologies. Software labs foster practical
+                coding skills and innovation in the ever-evolving digital landscape.
+            </p>
+        </div>
+        <div class="sub-container">
+            <img src="./Image/hardware.jpg" alt="Image 2">
+            <h3>Hardware Lab</h3>
+            <p>Hardware labs are dynamic spaces where individuals immerse themselves in the world of physical computing
+                components. Equipped with tools like soldering stations, microcontrollers, and testing equipment, these
+                labs
+                offer hands-on experience in designing, assembling, and troubleshooting hardware systems. Participants
+                gain
+                practical insights into electronics, robotics, and IoT devices. Hardware labs play a pivotal role in
+                fostering hands-on skills and innovation in technology.</p>
+        </div>
+        <div class="sub-container">
+            <img src="./Image/physics.jpg" alt="Image 3">
+            <h3>Physics Lab</h3>
+            <p>Physics labs are vital components of scientific learning, enabling students to explore fundamental
+                principles through hands-on experimentation. Equipped with instruments like oscilloscopes, lasers, and
+                electrometers, these labs provide practical insights into phenomena like motion, electricity, and
+                optics.
+                Safety protocols, precision in measurements, and data analysis skills are emphasized. Software Lab
+                Safety practices and proper component handling are crucial. <br><br></p>
+        </div>
+    </div>
+    <div class="section-container">
+        <div class="sub-container">
+            <img src="./Image/chemistry.jpg" alt="Image 1">
+            <h3>Chemistry Lab</h3>
+            <p>Chemistry labs are integral to scientific education and research. These spaces provide a practical
+                platform
+                for students and professionals to explore chemical phenomena, validate theoretical principles, and
+                develop
+                critical laboratory techniques. Equipped with a range of instruments like Bunsen burners,
+                spectrophotometers, and glassware, these labs facilitate experiments in synthesis, analysis, and
+                reaction
+                kinetics. </p>
+        </div>
+        <div class="sub-container">
+            <img src="./Image/electronic.jpg" alt="Image 2">
+            <h3>Electronics Lab</h3>
+            <p>Electronic labs serve as dynamic spaces where students and professionals delve into the intricate world
+                of
+                electronic circuits and devices. Equipped with tools like oscilloscopes, function generators, and
+                soldering
+                stations, these labs offer hands-on experience in designing, building, and troubleshooting electronic
+                systems. Safety practices and proper component handling are crucial. </p>
+        </div>
+        <div class="sub-container">
+            <img src="./Image/electrical.jpg" alt="Image 3">
+            <h3>Electrical Lab</h3>
+            <p>Electrical labs provide a stimulating environment for individuals to grasp the essentials of electrical
+                systems and applications. Furnished with instruments like multimeters, power supplies, and circuit
+                boards,
+                these labs offer hands-on opportunities to explore concepts such as circuits, electromagnetism, and
+                power
+                distribution. Safety protocols and precise measurements are emphasized. </p>
+        </div>
+    </div>
+
+    <section id="experts">
+        <h2>LAB ASSISTANT</h2>
+
+        <div class="expert-box">
+            <div class="profile">
+                <img src="./image/Avinash-scaled.jpg" alt="">
+                <h4>Mr. Avinash Dogra</h4>
+                <p>Lab Technician(CSE)</p>
+
+            </div>
+            <div class="profile">
+                <img src="./image/Paramjeet.jpg" alt="">
+                <h4>Mr. Paramjeet</h4>
+                <p>Lab Technician(CSE)</p>
+
+            </div>
+            <div class="profile">
+                <img src="./image/Deepak-LA-Physics.jpg" alt="">
+                <h4>Mr. Deepak</h4>
+                <p>Lab Technician(PHYSICS)</p>
+
+            </div>
+            <div class="profile">
+                <img src="./image/vinaykum.jpg" alt="">
+                <h4>Mr. Vinay Kumar</h4>
+                <p>Lab Technician(CHEMISTRY)</p>
+
+            </div>
+            <div class="profile">
+                <img src="./image/AmitSharma.jpg" alt="">
+                <h4>Mr. Amit Sharma</h4>
+                <p>Lab Technician(ECE)</p>
+
+            </div>
+            <div class="profile">
+                <img src="./image/sumitkum.jpg" alt="">
+                <h4>Mr. Sumit Kumar</h4>
+                <p>Lab Technician(ELECTRICAL)</p>
+
+            </div>
+            <div class="profile">
+                <img src="./image/satpaal.jpg" alt="">
+                <h4>Mr. Satpal</h4>
+                <p>Lab Technician(CSE)</p>
+
+
+            </div>
+            <div class="profile">
+                <img src="./image/Nitin-Lab-Technician.jpg" alt="">
+                <h4>Mr. Nitin</h4>
+                <p>Lab Technician(CSE)</p>
+
+            </div>
+        </div>
+    </section>
+   
+<footer style="background:url(Image/Speedline-50s-1846px.svg)">
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <span>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY UNA</span>
+        </div>
+       
+      </div>
+      
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">About</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="index.html">About us</a></li>
+          <li><a href="labs.html">Labs</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Quick Links</li>
+          <li><a href="https://pgportal.gov.in/">CPGRAMS Portal</a></li>
+          <li><a href="campuslife.html">Campus Life</a></li>
+          <li><a href="reach.html">How to Reach</a></li>
+        </ul>
+        <ul class="box">
+         <li class="link_name">Student's Corner</li>
+         
+         <li><a href="complaint.html">Complaint Section</a></li>
+         <li><a href="academics.html">Academics</a></li>
+         <li><a href="placement.html">Placement</a></li>
+         
+       </ul> 
+        <ul class="box input-box">
+         <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.5655687846292!2d76.18850141440156!3d31.48113465622981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391adb198180014f%3A0xbf76347093a3aa9a!2sIndian%20Institute%20of%20Information%20Technology%20(IIIT)%20Una!5e0!3m2!1sen!2sin!4v1667841204364!5m2!1sen!2sin"
+        
+         style="border: 0"
+         allowfullscreen=""
+         loading="lazy"
+         referrerpolicy="no-referrer-when-downgrade"
+       ></iframe>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2022 | Designed by Sharad Kumar</span>
+          
+        </span>
+      </div>
+    </div>
+  </footer>
+  
+<script>
+    const navbarMenu = document.getElementById("navbar");
+  const burgerMenu = document.getElementById("burger");
+  const overlayMenu = document.querySelector(".overlay");
+  
+  const toggleMenu = () => {
+     navbarMenu.classList.toggle("active");
+     overlayMenu.classList.toggle("active");
+  };
+  const collapseSubMenu = () => {
+     navbarMenu
+        .querySelector(".menu-dropdown.active .submenu")
+        .removeAttribute("style");
+     navbarMenu.querySelector(".menu-dropdown.active").classList.remove("active");
+  };
+  const toggleSubMenu = (e) => {
+     if (e.target.hasAttribute("data-toggle") && window.innerWidth <= 992) {
+        e.preventDefault();
+        const menuDropdown = e.target.parentElement;
+        if (menuDropdown.classList.contains("active")) {
+           collapseSubMenu();
+        } else {
+           if (navbarMenu.querySelector(".menu-dropdown.active")) {
+              collapseSubMenu();
+           }
+           menuDropdown.classList.add("active");
+           const subMenu = menuDropdown.querySelector(".submenu");
+           subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+        }
+     }
+  };
+  const resizeWindow = () => {
+     if (window.innerWidth > 992) {
+        if (navbarMenu.classList.contains("active")) {
+           toggleMenu();
+        }
+        if (navbarMenu.querySelector(".menu-dropdown.active")) {
+           collapseSubMenu();
+        }
+     }
+  };
+  burgerMenu.addEventListener("click", toggleMenu);
+  overlayMenu.addEventListener("click", toggleMenu);
+  navbarMenu.addEventListener("click", toggleSubMenu);
+  window.addEventListener("resize", resizeWindow);
+  
+  </script>
+</body>
+
+</html>

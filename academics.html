@@ -1,335 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academics</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/3c880d7cdd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="nav.js">
+    <title>Academics</title>
     <style>
-        .placement {
-            padding: auto;
-            border: 1px solid;
-            text-align: center;
-            color: white;
-            background-color: #003f81;
-            border-radius: 20px;
-            font-size: 30px;
-            border-width: 20%;
-            margin-top: 30px;
-            margin-left: 45px;
-            width: 90%;
-            margin-top: 50px;
-            padding: 8px;
+     
+.academic {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px) saturate(125%);
+    -webkit-backdrop-filter: blur(10px) saturate(125%);
+    background-color: rgba(255, 255, 255, 0.47);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
 
-        }
 
-        #place {
-           
-            margin: auto;
-            width: 80%;
-            border: 2px solid black;
-            padding: 10px;
-            margin-bottom: 30px;
-            height: auto;
-            backdrop-filter: blur(16px) saturate(180%);
-            -webkit-backdrop-filter: blur(16px) saturate(180%);
-            background-color: rgba(255, 255, 255, 0.78);
-            border-radius: 12px;
-            border: 1px solid rgba(209, 213, 219, 0.3);
-        }
 
-        .place-li {
+.heading-academic {
+    height: 50px;
+    background-color: #00237D;
+    padding: 4px;
+    border-radius: 30px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
 
-            margin-top: 50px;
-            margin-left: 60px;
-            font-size: 20px;
-        }
+.subheading-academic {
+  color: black;
+    padding: 10px;
+    
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: left;
+}
 
-        .place-li :hover {
-            color: orange;
-        }
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
 
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 30px;
-        }
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
 
-        p {
-            text-align: justify;
-            width: 90%;
-            margin-left: 50px;
-            font-size: 20px;
-            margin-top: 30px;
-        }
+ul.left-list {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+    text-align: left;
+}
 
-        h1 {
-            text-align: center;
-            margin-top: 20px;
-        }
+.centered-list-academic {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-        ul {
-            list-style-type: disc;
-            font-size: 20px;
-            margin-left: 70px;
-            margin: auto;
-            padding: auto;
+.centered-list {
+    list-style: disc;
+    text-align: left;
+    display: inline-block;
+    margin-left: 20px;
+    padding-left: 20px;
+}
 
-        }
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 
-        li {
-            margin-left: 70px;
-            margin-top: 20px;
-            /* margin: auto; */
-            color: #0073aa;
-            font-weight: 600;
-            align-items: center;
-            padding: auto;
-        }
 
-        li a {
-            color: #0073aa;
-        }
+@media (max-width: 768px) {
+    .academic {
+        width: 100%;
+    }
+    
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 
-        .rules {
-            text-align: left;
-            font-size: 20px;
-        }
+ul.left-list {
+    list-style: disc;
+    margin-left: -10px;
+    text-align: left;
+}
+}
 
-        table,
-        td,
-        th {
-            border: 2px solid black;
-            text-align: left;
-            /* font-size: 10px; */
-        }
 
-        table {
-            border-collapse: collapse;
-            width: 80%;
-            margin-left: 90px;
-            margin-top: 80px;
-            margin-bottom: 50px;
-        }
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
 
-        th,
-        td {
-            padding: 15px;
-            font-size: 20px;
-            background-color: whitesmoke;
-        }
-        .headi{
-            margin-top: 40px;
-            text-align: center;
-        }
-    </style>
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 20px;
+    text-align: right;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 30px;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+    font-size: 18px;
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 18px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+  margin-top: 52px;
+    border: 0;
+  }
+
+  table caption {
+    
+    font-size: 40px;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 17px;
+    text-align: right;
+  }
+  
+  table td::before {
+   
+    content: attr(data-label);
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
     </style>
 </head>
-
 <body>
- 
-  <nav class="new-nav">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/en/c/cf/Iiit-una-logo.png"
-      alt="iiit una"
-    />
-    <div class="name">
-      <h1>भारतीय सूचना प्रौद्योगिकी संस्थान, ऊना</h1>
-      <h3>Indian Institute of Information Technology, Una</h3>
-    </div>
-    <img
-      src="https://www.iitb.ac.in/sites/www.iitb.ac.in/themes/touchm/logo_75.png"
-      alt="azadi ka amrit mahotsav"
-    />
-  </nav>
-  <div class="new-nav-links">
-    <!-- <a href="index.html" class="nav-link">HOME</a> -->
-    <div class="dropdown">
-      <button class="dropbtn"><a href="index.html"> HOME</a></button>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">ABOUT</button>
-      <div class="dropdown-content">
-        <a href="campus.html">Campus</a>
-      
-        <a href="lab.html">Labs</a>
-        <a href="campuslife.html">Student life</a>
-        <a href="academics.html">Academics</a>
+   
+  <header class="header" id="header">
+    <section class="wrapper nav">
+       <a href="./index.html" class="brand"><img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Iiit-una-logo.png" alt="" style="height: 60px;"><p>भारतीय सूचना प्रौद्योगिकी संस्थान ऊना</p></a>
+       <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+       </div>
+       <span class="overlay"></span>
+       <nav class="navbar" id="navbar">
+          <ul class="menu" id="menu">
+             <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+             <li class="menu-item menu-dropdown">
+                <span class="menu-link" data-toggle="submenu">About<i class="bx bx-chevron-down"></i></span>
+                <ul class="submenu">
+                   <li class="submenu-item"><a href="campus.html" class="submenu-link">Campus</a></li>
+                   <li class="submenu-item"><a href="labs.html" class="submenu-link">Labs</a></li>
+                   <li class="submenu-item"><a href="academics.html" class="submenu-link">Academics</a></li>
+                   <li class="submenu-item"><a href="placement.html" class="submenu-link">Placement</a></li>
+                </ul>
+             </li>
+             <li class="menu-item menu-dropdown">
+                <span class="menu-link" data-toggle="submenu">Department<i class="bx bx-chevron-down"></i></span>
+                <ul class="submenu">
+                   <li class="submenu-item"><a href="courses.html" class="submenu-link">Courses</a></li>
      
-        <a href="placement.html">Placement</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn"><a href="courses.html">DEPARTMENT</a> </button>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn"><a href="">CAMPUS</a> </button>
-      <div class="dropdown-content">
-        <a href="campus.html">Student Activities</a>
-        <a href="hostel.html">Hostels</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn"><a href="icscs.html">ICIC3S</a> </button>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">CONTACT</button>
-      <div class="dropdown-content">
-        <a href="complaint.html">Complaint</a>
-        <a href="reach.html">How to reach</a>
-        <a href="contact.html">Contact Directory</a>
-       
-      </div>
-    </div>
-    
-  </div>
+                </ul>
+             </li>
+             <li class="menu-item menu-dropdown">
+                <span class="menu-link" data-toggle="submenu">Campus<i class="bx bx-chevron-down"></i></span>
+                <ul class="submenu">
+                   <li class="submenu-item"><a href="studentactivity.html" class="submenu-link">Students Activity</a></li>
+                   <li class="submenu-item"><a href="hostels.html" class="submenu-link">Hostels</a></li>
+                  
+                </ul>
+             </li>
+             <li class="menu-item menu-dropdown">
+              <span class="menu-link" data-toggle="submenu">Contact<i class="bx bx-chevron-down"></i></span>
+              <ul class="submenu">
+                 <li class="submenu-item"><a href="complaint.html" class="submenu-link">Complaint</a></li>
+                 <li class="submenu-item"><a href="reach.html" class="submenu-link">How to Reach</a></li>
+                 <li class="submenu-item"><a href="contact.html" class="submenu-link">Contact Directory</a></li>
+              </ul>
+           </li>
+          </ul>
+       </nav>
+    </section>
+ </header>
 
-    <section id="place">
-        <h3 class="placement">ACADEMICS</h3>
-        <p> Under-Graduate Programmes</p>
-        <ul>
+   
+    <section class="academics">
+    <div class="academic">
+        <div class="heading-academic">
+            <h1>ACADEMICS</h1>
+        </div>
+        <div class="subheading-academic">
+            <h2>Under-Graduate Programmes</h2>
+        </div>
+        <ul class="left-list">
             <li>B.Tech in Computer Science and Engineering (CSE) – 66 Seats</li>
             <li>B.Tech in Electronics and Communication Engineering (ECE) – 66 Seats</li>
             <li>B.Tech in Information Technology (IT) – 66 Seats</li>
         </ul>
-        <h3 class="placement">Ordinances and Regulations</h3>
-        <p class="rules"><a href="">Administartive Rules and Regulation</a></p>
-        <ul>
+
+
+        <div class="heading-academic">
+            <h1>Ordinances and Regulations</h1>
+        </div>
+        <div class="subheading-academic">
+            <h2>Administartive Rules and Regulation</h2>
+        </div>
+        <ul class="left-list">
             <li> <a href="./pdf/ug.pdf">UG</a></li>
             <li> <a href="./pdf/pg.pdf">PHD</a></li>
-            <h3 class="placement">UG Structure and Syllabus</h3>
         </ul>
-        <p> Under-Graduate Programmes</p>
-        <ul>
+
+
+        <div class="heading-academic">
+            <h1>UG Structure and Syllabus</h1>
+        </div>
+        <div class="subheading-academic">
+            <h2>Under-Graduate Programmes</h2>
+        </div>
+        <ul class="left-list">
             <li>2014-15 to 2017-18</li>
             <li><a href="">Electronics and Communication Engineering </a></li>
             <li><a href="">Computer Science and Engineering</a></li>
             <li><a href=""> Information Technology</a></li>
         </ul>
-        <h3 class="placement">Fee Structure</h3>
-        <ul>
+
+        <div class="heading-academic">
+            <h1>Fee Structure</h1>
+        </div>
+       
+        <ul class="left-list">
             <li><a href="">2018-22</a></li>
             <li>2019-23</li>
         </ul>
-        <h3 class="placement">Examination Form</h3>
-        <ul>
+        </ul>
+
+        <div class="heading-academic">
+            <h1>Examination Form</h1>
+        </div>
+       
+        <ul class="left-list">
             <li><a href="./pdf/Revaluation-Form-with-Procedure.pdf">Revaluation Request Form</a></li>
         </ul>
-<!-- 
-        <h3 class="placement"></h3>
-        <ul>
-            <li><a href="">2018-22</a></li>
-            <li> 2019-23</li>
-        </ul> -->
-        <h3 class="placement">Registration Forms</h3>
-        <ul>
+
+        <div class="heading-academic">
+            <h1>Registration Forms</h1>
+        </div>
+        <div class="subheading-academic">
+            <h2>Under-Graduate Programmes</h2>
+        </div>
+        <ul class="left-list">
             <li><a href="./pdf/Course-Registration-Form.pdf">Course Registration-VIII Semester</a></li>
             <li><a href="./pdf/Hostel-Admission-Form.pdf"> Hostel Admission Form</a></li>
             <li><a href="./pdf/Hostel-Registration-Form.pdf">Hostel Registration Form</a></li>
         </ul>
-
-
-        <h2 class="head">Contact information:</h2>
-
-
+       
         <table>
-            <tr>
-                <th>S.No</th>
-                <th>Concern</th>
-                <th>Name of the official</th>
-                <th>Contact details of official</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Placements</td>
-                <td>Dr. Naman Garg</td>
-                <td>+91-9555698585</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Campus,
-                    Hostel Facility etc.</td>
-                <td>Prof. A. N. Gill</td>
-                <td> +91 94177 93706</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Fee/Loan etc.</td>
-                <td>Mr. Jagjeet Singh</td>
-                <td>+91 7018503267</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Fee/Loan etc.</td>
-                <td>Sh. Uttam Patial</td>
-                <td>+91 94182 95559</td>
-            </tr>
-        </table>
+            <caption>Contact Information</caption>
+            <thead>
+              <tr>
+               <th scope="col">S.No</th>
+                <th scope="col">Concern</th>
+                <th scope="col">Name </th>
+                <th scope="col">Contact details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="S.No">1</td>
+                <td data-label="Concern">Placements</td>
+                <td data-label="Name">Dr. Naman Garg</td>
+                <td data-label="Contact">+91-9555698585</td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="S.No">2</td>
+                <td data-label="Concern">Campus,Hostel Facility etc.</td>
+                <td data-label="Name">Prof. A. N. Gill</td>
+                <td data-label="Contact">+91-9555698585</td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="S.No">3</td>
+                <td data-label="Concern">Fee/Loan etc.</td>
+                <td data-label="Name">Mr. Jagjeet Singh</td>
+                <td data-label="Contact">91 7018503267</td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="S.No">4</td>
+                <td data-label="Concern">Fee/Loan etc.</td>
+                <td data-label="Name">Sh.Uttam Patil</td>
+                <td data-label="Contact">+91 94182 95559</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+   
+</section>
 
-    </section>
-    <footer style="background: url(Speedline-50s-1846px.svg)">
-      <div class="content">
-        <div class="top">
-          <div class="logo-details">
-            <span>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY UNA</span>
-          </div>
-          <div class="media-icons">
-            <a href="https://www.facebook.com/iiituna" target="_blank"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href=""><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://instagram.com/iiituna_" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://linkedin.com/" target="_blank"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </div>
-        </div>
-        <div class="link-boxes">
-          <ul class="box">
-            <li class="link_name">About</li>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-            <li><a href="#about-section">ABOUT US</a></li>
-            <li><a href="lab.html">LABS</a></li>
-          </ul>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <ul class="box">
-            <li class="link_name">Quick Links</li>
-            <li>
-              <a href="https://pgportal.gov.in/"
-                >CPGRAMS PORTAL</a
-              >
-            </li>
-            <li><a href="campuslife.html">CAMPUS LIFE</a></li>
-            <li><a href="reach.html">HOW TO REACH</a></li>
-          </ul>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <ul class="box">
-            <li class="link_name">Student's Corner</li>
-            <li><a href="complaint.html">COMPLAINT SECTION</a></li>
-            <li><a href="academics.html">ACADEMICS</a></li>
-            <li><a href="placement.html">PLACEMENT</a></li>
-          </ul> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <ul class="box-1">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.5655687846292!2d76.18850141440156!3d31.48113465622981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391adb198180014f%3A0xbf76347093a3aa9a!2sIndian%20Institute%20of%20Information%20Technology%20(IIIT)%20Una!5e0!3m2!1sen!2sin!4v1667841204364!5m2!1sen!2sin"
-              width="350"
-              height="250"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </ul>
-        </div>
+<footer style="background:url(Image/Speedline-50s-1846px.svg)">
+  <div class="content">
+    <div class="top">
+      <div class="logo-details">
+        <span>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY UNA</span>
       </div>
-    </footer>
+     
+    </div>
+    
+    <div class="link-boxes">
+      <ul class="box">
+        <li class="link_name">About</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="index.html">About us</a></li>
+        <li><a href="labs.html">Labs</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Quick Links</li>
+        <li><a href="https://pgportal.gov.in/">CPGRAMS Portal</a></li>
+        <li><a href="campuslife.html">Campus Life</a></li>
+        <li><a href="reach.html">How to Reach</a></li>
+      </ul>
+      <ul class="box">
+       <li class="link_name">Student's Corner</li>
+       
+       <li><a href="complaint.html">Complaint Section</a></li>
+       <li><a href="academics.html">Academics</a></li>
+       <li><a href="placement.html">Placement</a></li>
+       
+     </ul> 
+      <ul class="box input-box">
+       <iframe
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.5655687846292!2d76.18850141440156!3d31.48113465622981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391adb198180014f%3A0xbf76347093a3aa9a!2sIndian%20Institute%20of%20Information%20Technology%20(IIIT)%20Una!5e0!3m2!1sen!2sin!4v1667841204364!5m2!1sen!2sin"
+      
+       style="border: 0"
+       allowfullscreen=""
+       loading="lazy"
+       referrerpolicy="no-referrer-when-downgrade"
+     ></iframe>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright © 2022 | Designed by Sharad Kumar</span>
+      <span class="policy_terms">
+       
+      </span>
+    </div>
+  </div>
+</footer>
 
+<script>
+  const navbarMenu = document.getElementById("navbar");
+const burgerMenu = document.getElementById("burger");
+const overlayMenu = document.querySelector(".overlay");
+
+const toggleMenu = () => {
+   navbarMenu.classList.toggle("active");
+   overlayMenu.classList.toggle("active");
+};
+const collapseSubMenu = () => {
+   navbarMenu
+      .querySelector(".menu-dropdown.active .submenu")
+      .removeAttribute("style");
+   navbarMenu.querySelector(".menu-dropdown.active").classList.remove("active");
+};
+const toggleSubMenu = (e) => {
+   if (e.target.hasAttribute("data-toggle") && window.innerWidth <= 992) {
+      e.preventDefault();
+      const menuDropdown = e.target.parentElement;
+      if (menuDropdown.classList.contains("active")) {
+         collapseSubMenu();
+      } else {
+         if (navbarMenu.querySelector(".menu-dropdown.active")) {
+            collapseSubMenu();
+         }
+         menuDropdown.classList.add("active");
+         const subMenu = menuDropdown.querySelector(".submenu");
+         subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+      }
+   }
+};
+const resizeWindow = () => {
+   if (window.innerWidth > 992) {
+      if (navbarMenu.classList.contains("active")) {
+         toggleMenu();
+      }
+      if (navbarMenu.querySelector(".menu-dropdown.active")) {
+         collapseSubMenu();
+      }
+   }
+};
+burgerMenu.addEventListener("click", toggleMenu);
+overlayMenu.addEventListener("click", toggleMenu);
+navbarMenu.addEventListener("click", toggleSubMenu);
+window.addEventListener("resize", resizeWindow);
+
+</script>
 </body>
-
 </html>

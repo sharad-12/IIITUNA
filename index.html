@@ -1,476 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IIIT UNA</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
-    <link rel="stylesheet" href="complaint.css" />
-    <script
-      src="https://kit.fontawesome.com/3c880d7cdd.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <!-- header section -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIIT UNA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="nav.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
 
-    <nav class="new-nav">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/en/c/cf/Iiit-una-logo.png"
-        alt="iiit una"
-      />
-      <div class="name">
-        <h1>भारतीय सूचना प्रौद्योगिकी संस्थान, ऊना</h1>
-        <h3>Indian Institute of Information Technology, Una</h3>
+
+</head>
+
+<body>
+
+  <!-- header section starts  -->
+
+  <header class="header" id="header">
+    <section class="wrapper nav">
+      <a href="./index.html" class="brand"><img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Iiit-una-logo.png"
+          alt="" style="height: 50px;">
+        <p>भारतीय सूचना प्रौद्योगिकी संस्थान ऊना</p>
+      </a>
+      <div class="burger" id="burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
       </div>
-      <img
-        src="https://www.iitb.ac.in/sites/www.iitb.ac.in/themes/touchm/logo_75.png"
-        alt="azadi ka amrit mahotsav"
-      />
-    </nav>
-    <div class="new-nav-links">
-      <!-- <a href="index.html" class="nav-link">HOME</a> -->
-      <div class="dropdown">
-        <button class="dropbtn"><a href="index.html"> HOME</a></button>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">ABOUT</button>
-        <div class="dropdown-content">
-          <a href="campus.html">Campus</a>
-          <a href="lab.html">Labs</a>
-          <a href="campuslife.html">Student life</a>
-          <a href="academics.html">Academics</a>
-         
-          <a href="placement.html">Placement</a>
-         
+      <span class="overlay"></span>
+      <nav class="navbar" id="navbar">
+        <ul class="menu" id="menu">
+          <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+          <li class="menu-item menu-dropdown">
+            <span class="menu-link" data-toggle="submenu">About<i class="bx bx-chevron-down"></i></span>
+            <ul class="submenu">
+              <li class="submenu-item"><a href="campus.html" class="submenu-link">Campus</a></li>
+              <li class="submenu-item"><a href="labs.html" class="submenu-link">Labs</a></li>
+              <li class="submenu-item"><a href="academics.html" class="submenu-link">Academics</a></li>
+              <li class="submenu-item"><a href="placement.html" class="submenu-link">Placement</a></li>
+            </ul>
+          </li>
+          <li class="menu-item menu-dropdown">
+            <span class="menu-link" data-toggle="submenu">Department<i class="bx bx-chevron-down"></i></span>
+            <ul class="submenu">
+              <li class="submenu-item"><a href="courses.html" class="submenu-link">Courses</a></li>
+
+            </ul>
+          </li>
+          <li class="menu-item menu-dropdown">
+            <span class="menu-link" data-toggle="submenu">Campus<i class="bx bx-chevron-down"></i></span>
+            <ul class="submenu">
+              <li class="submenu-item"><a href="studentactivity.html" class="submenu-link">Students Activity</a></li>
+              <li class="submenu-item"><a href="hostels.html" class="submenu-link">Hostels</a></li>
+
+            </ul>
+          </li>
+          <li class="menu-item menu-dropdown">
+            <span class="menu-link" data-toggle="submenu">Contact<i class="bx bx-chevron-down"></i></span>
+            <ul class="submenu">
+              <li class="submenu-item"><a href="complaint.html" class="submenu-link">Complaint</a></li>
+              <li class="submenu-item"><a href="reach.html" class="submenu-link">How to Reach</a></li>
+              <li class="submenu-item"><a href="contact.html" class="submenu-link">Contact Directory</a></li>
+            </ul>
+          </li>
+          <!-- <li class="menu-item"><a href="#" class="menu-link">Contact</a></li> -->
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <section>
+    <div class="paralex-body">
+      <div class="paralex-head paralex-images">
+        <div class="paralex-text">
+
         </div>
       </div>
-      <div class="dropdown">
-        <button class="dropbtn"><a href="courses.html">DEPARTMENT</a> </button>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn"><a href="">CAMPUS</a> </button>
-        <div class="dropdown-content">
-          <a href="studentactivity.html">Student Activities</a>
-          <a href="hostel.html">Hostels</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn"><a href="icscs.html">ICIC3S</a> </button>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">CONTACT</button>
-        <div class="dropdown-content">
-          <a href="complaint.html">Complaint</a>
-          <a href="reach.html">How to reach</a>
-          <a href="contact.html">Contact Directory</a>
-         
-        </div>
-      </div>
-      
     </div>
+  </section>
 
-    <!-- account form section starts  -->
+  <!-- About us section-->
+  <section class="about-section-head" id="about-section id">
+    <div class="about-container">
+      <div class="row">
+        <div class="section-title" style="width: 1300px;">
+          <h2 style="font-size: 36px; margin-bottom: 30px;"> About IIIT<span style="color: #f93"> UNA</span> </h2>
+        </div>
 
-    <!-- parallex effects starts -->
 
-    <section id="home">
-      <div class="paralex-body">
-        <div class="paralex-head paralex-images"></div>
+        <div class="about-left">
+          <p>IIIT Una is one of the 20 IIITs being setup, funded and managed by the Ministry of Human Resource
+            Development, Govt. of India under the Public Private Partnership (PPP) model. The partners setting up IIIT
+            Una are the Ministry of Human Resource Development, Govt. of India, the Govt. of Himachal Pradesh, HP Power
+            Corporation Limited and HP Transmission Corporation Limited. Admissions to the undergraduate programmes in
+            the Institute are made through the Joint Entrance Examination (JEE). </p>
+          <p>At present, IIIT Una operates from its permanent campus at Saloh, Una. The campus is fully furnished and
+            working full fledged from its permanent campus.</p>
+
+
+          <div class="about-director">
+            <div>
+              <h4 style="font-size: 18px;">Prof. Selvakumar</h4>
+              <!-- <small>(Director of IIITU)</small> -->
+            </div>
+
+            <button class="btn"><a href="directordesk.html">Director's Desk</a></button>
+
+          </div>
+        </div>
+
+
       </div>
-    </section>
+    </div>
+  </section>
+  <br><br>
+  <div class="newsheading">
+    <h2 style="font-size: 36px; margin-bottom: 30px;"> News &<span style="color: #f93"> Events</span> </h2>
 
-    <!-- counter container start -->
-    <section>
-      <div class="counter count-section">
-        <div class="count-container">
-          <div class="counter-box">
-            <h2><span id="count1"></span>+</h2>
-            <p>Admission Every Year</p>
-          </div>
-
-          <div class="counter-box">
-            <h2><span id="count1"></span>+</h2>
-            <p>Placement Every Year</p>
-          </div>
-        </div>
+  </div>
+  <div class="main-container">
+    <div class="left-container">
+      <div class="left-sub-container">
+        <img src="./Image/aids.jfif" alt="Image 1">
+        <p>
+          <a href="">special lecture on HIV/AIDS awareness organised by District
+            Control Aids Society Una(HP), HP State Aids Control Society
+            Shimla and Cheif Medical Officer, Dist. Haroli, Una.</a>
+        </p>
       </div>
-    </section>
-
-    <!-- about us section -->
-
-    <section class="about-section-head" id="about-section">
-      <div class="about-container">
-        <div class="row">
-          <div class="section-title" style="width: 1300px">
-            <h2 style="font-size: 36px; margin-bottom: 30px">
-              ABOUT <span style="color: #f93">IIIT UNA</span>
-            </h2>
-          </div>
-        </div>
-
-        <div id="about-flex">
-          <div class="about-left">
-            <h2>Indian Institute of Information Technology Una</h2>
-            <p>
-              IIIT Una is one of the 20 IIITs being setup, funded and managed by
-              the Ministry of Human Resource Development, Govt. of India under
-              the Public Private Partnership (PPP) model. The partners setting
-              up IIIT Una are the Ministry of Human Resource Development, Govt.
-              of India, the Govt. of Himachal Pradesh, HP Power Corporation
-              Limited and HP Transmission Corporation Limited. Admissions to the
-              undergraduate programmes in the Institute are made through the
-              Joint Entrance Examination (JEE).
-            </p>
-            <p>
-              At present, IIIT Una operates from its permanent campus at Saloh,
-              Una. The campus is fully furnished and working full fledged from
-              its permanent campus.
-            </p>
-
-            <div class="about-director">
-              <div>
-                <h4 style="font-size: 18px">Prof.S Selva Kumar</h4>
-                <p>Director IIITU</p>
-              </div>
-              <button class="btn">
-                <a href="director.html">Director Desk</a>
-              </button>
-            </div>
-          </div>
-        </div>
+      <div class="left-sub-container">
+        <img src="./Image/news1.jfif" alt="Image 2">
+        <p>
+          <a href="">
+            IIIT UNA celebrated 'Janajatiya Gourav Diwas' on the birth
+            anniversary of tribal leader Bhagwan Birsa Munda on 15,
+            NOV.'22.</a>
+        </p>
       </div>
-    </section>
-    <!-- news section -->
-    <section id="notice">
-      <h2 style="font-size: 34px" class="notice">
-        NEWS & <span style="color: #f93">EVENTS</span>
-      </h2>
-      <div class="news">
-        <div class="news-section">
-          <div>
-            <div class="left-news">
-              <img
-                src="./images/aids.jfif"
-                alt=""
-                width="120px"
-                height="120px"
-              />
-            </div>
-            <div class="right-news">
-              <p>
-                <a href=""
-                  >special lecture on HIV/AIDS awareness organised by District
-                  Control Aids Society Una(HP), HP State Aids Control Society
-                  Shimla and Cheif Medical Officer, Dist. Haroli, Una.</a
-                >
-              </p>
-            </div>
-          </div>
-          <div>
-            <div class="left-news">
-              <img
-                src="./images/news1.jfif"
-                alt=""
-                width="120px"
-                height="120px"
-              />
-            </div>
-            <div class="right-news">
-              <p>
-                <a href="">
-                  IIIT UNA celebrated 'Janajatiya Gourav Diwas' on the birth
-                  anniversary of tribal leader Bhagwan Birsa Munda on 15,
-                  NOV.'22.</a
-                >
-              </p>
-            </div>
-          </div>
-          <div>
-            <div class="left-news">
-              <img
-                src="./images/news2.jfif"
-                alt=""
-                width="120px"
-                height="120px"
-              />
-            </div>
-            <div class="right-news">
-              <p>
-                <a href="">
-                  IIIT UNA observes vigilance awareness week on 2nd Nov.'22.
-                  Everyone here took integrity pledge With the focus on
-                  promoting probity in public life.</a
-                >
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <div class="left-news">
-              <img
-                src="./images/paul.jfif"
-                alt=""
-                width="120px"
-                height="120px"
-              />
-            </div>
-            <div class="right-news">
-              <p>
-                <a href=""
-                  >IIIT Una has initiated the two week Fullbright program with
-                  Dr. Paul Joseph where he will be sharing his knowledge over
-                  Nano Technology. Also, Dr. Paul is mentoring students and
-                  faculty under this program.</a
-                >
-              </p>
-            </div>
-          </div>
-          <div>
-            <div class="left-news">
-              <br />
-              <img src="./images/12.jfif" alt="" width="120px" height="120px" />
-            </div>
-            <div class="right-news">
-              <p>
-                <a href="">
-                  An investment in knowledge always pays the best interest." —
-                  Benjamin Franklin. IIIT Una finish off its fifth convocation
-                  held on 15th Oct. 2022. Dr. K.Sivan (Former director ISRO)
-                  graced the occassion as the chief guest. We wish them all the
-                  success in their future endeavours.
-                </a>
-              </p>
-
-              <p><a href="special leac.html">More-></a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="updates">
-          <h3>Events</h3>
-
-          <ul>
-            <li><a href="#">Azadi ka Amrit Mahotsav</a></li>
-            <li>
-              <a href="#"
-                >IIIT Una finish off its<br />
-                &nbsp;&nbsp;&nbsp; fifth convocation
-              </a>
-            </li>
-            <li>
-              <a href="#"
-                >celebrated Constitution <br />
-                &nbsp;&nbsp;&nbsp; Day on 26, Nov.' 22
-              </a>
-            </li>
-            <li><a href="#">International Yoga Day</a></li>
-          </ul>
-          <h3>Govt Updates</h3>
-
-          <ul>
-            <li>
-              <a href="#"
-                >Atal Ranking of Institutions on <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;Innovation Achievements</a
-              >
-            </li>
-            <li><a href="#">Cybercrimes Security</a></li>
-          </ul>
-          <h3>Announcements</h3>
-
-          <ul>
-            <li>
-              <a href="./pdf/EoI-Stationery-Shop-01-12-22-.pdf"
-                >Expression of Interest for <br />&nbsp;&nbsp;&nbsp;&nbsp;
-                Running a Stationary Shop
-              </a>
-            </li>
-            <li>
-              <a href="./pdf/Microsoft Word - EOI-Hostel Assistant.docx.pdf"
-                >Hostel Assistant Recruitment …<br />
-                &nbsp;&nbsp;&nbsp;&nbsp; Walk-In Interview Schedule</a
-              >
-            </li>
-            <li>
-              <a href="./pdf/PhD...-Admission...Advertisment...AY-2022-23.pdf">
-                Advt. for PhD Admissions <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;for AY 2022-23</a
-              >
-            </li>
-
-            <li>
-              <a href="./pdf/Advt.-for-the-Post-of-Director-IIIT-Una-HP.pdf">
-                Advt. for the Post of <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;Director, IIIT Una (HP)</a
-              >
-            </li>
-          </ul>
-        </div>
+      <div class="left-sub-container">
+        <img src="./Image/news2.jfif" alt="Image 3">
+        <p>
+          <a href="">
+            IIIT UNA observes vigilance awareness week on 2nd Nov.'22.
+            Everyone here took integrity pledge With the focus on
+            promoting probity in public life.</a>
+        </p>
       </div>
-    </section>
-
-    <!-- our recruiters -->
-    <section class="marquee-section">
-      <div class="marquee-container">
-        <div class="partner-title">
-          <h2 style="font-size: 32px">
-            OUR <span style="color: #f93">RECRUITERS</span>
-          </h2>
-        </div>
-        <marquee behavior="alternate" direction="right">
-          <img
-            src="./images/amazon-logo.png"
-            alt="Natural"
-            style="width: auto; height: 50px; margin: 10px"
-          />
-          <img
-            src="./images/Samsung-Logo-with-serif.jpg"
-            alt="Natural"
-            style="width: auto; height: 50px; margin: 10px"
-          />
-          <img
-            src="./images/download.png"
-            alt="Natural"
-            style="width: auto; height: 50px; margin: 10px"
-          />
-          <img
-            src="./images/naga.png"
-            alt="Natural"
-            style="width: auto; height: 50px; margin: 10px"
-          />
-          <img
-            src="./images/india.png"
-            alt="Natural"
-            style="width: auto; height: 50px; margin: 10px"
-          />
-          <img
-            src="./images/8867.webp"
-            alt="Natural"
-            style="width: auto; height: 50px; margin: 10px"
-          />
-          <img
-            src="./images/Byju's_logo.svg.png"
-            alt="Natural"
-            style="width: auto; height: 50px; margin: 10px"
-          />
-          <img
-            src="./images/Google_2011_logo.png"
-            alt="Natural"
-            style="width: auto; height: 50px; margin: 10px"
-          />
-          <img
-            src="./images/Infosys_logo.svg.png"
-            alt="Natural"
-            style="width: auto; height: 50px; margin: 10px"
-          />
-          <img
-            src="./images/Quizziz_Logo.png"
-            alt="Natural"
-            style="width: auto; height: 50px; margin: 10px"
-          />
-          <img
-            src="./images/Groww_app_logo.png"
-            alt="Natural"
-            style="width: auto; height: 50px; margin: 10px"
-          />
-        </marquee>
+      <div class="left-sub-container">
+        <img src="./Image/paul.jfif" alt="Image 4">
+        <p>
+          <a href="">IIIT Una has initiated the two week Fullbright program with
+            Dr. Paul Joseph where he will be sharing his knowledge over
+            Nano Technology. Also, Dr. Paul is mentoring students and
+            faculty under this program.</a>
+        </p>
       </div>
-    </section>
-
-    <!-- footer section -->
-    <footer style="background: url(Speedline-50s-1846px.svg)">
-      <div class="content">
-        <div class="top">
-          <div class="logo-details">
-            <span>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY UNA</span>
-          </div>
-          <div class="media-icons">
-            <a href="https://www.facebook.com/iiituna" target="_blank"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href=""><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://instagram.com/iiituna_" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://linkedin.com/" target="_blank"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </div>
-        </div>
-        <div class="link-boxes">
-          <ul class="box">
-            <li class="link_name">About</li>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-            <li><a href="#about-section">ABOUT US</a></li>
-            <li><a href="lab.html">LABS</a></li>
-          </ul>
-          <ul class="box">
-            <li class="link_name">Quick Links</li>
-            <li>
-              <a href="https://pgportal.gov.in/"
-                >CPGRAMS PORTAL</a
-              >
-            </li>
-            <li><a href="campuslife.html">CAMPUS LIFE</a></li>
-            <li><a href="reach.html">HOW TO REACH</a></li>
-          </ul>
-          <ul class="box">
-            <li class="link_name">Student's Corner</li>
-            <li><a href="complaint.html">COMPLAINT SECTION</a></li>
-            <li><a href="academics.html">ACADEMICS</a></li>
-            <li><a href="placement.html">PLACEMENT</a></li>
-          </ul>
-          <ul class="box-1">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.5655687846292!2d76.18850141440156!3d31.48113465622981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391adb198180014f%3A0xbf76347093a3aa9a!2sIndian%20Institute%20of%20Information%20Technology%20(IIIT)%20Una!5e0!3m2!1sen!2sin!4v1667841204364!5m2!1sen!2sin"
-              width="350"
-              height="250"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </ul>
-        </div>
+      <div class="left-sub-container">
+        <img src="./Image/12.jfif" alt="Image 5">
+        <p>
+          <a href="">
+            An investment in knowledge always pays the best interest." —
+            Benjamin Franklin. IIIT Una finish off its fifth convocation
+            held on 15th Oct. 2022. Dr. K.Sivan (Former director ISRO)
+            graced the occassion as the chief guest. We wish them all the
+            success in their future endeavours.
+          </a>
+        </p>
       </div>
-    </footer>
+    </div>
+    <div class="right-container">
+      <h2>Events</h2>
+      <ul>
+        <li><a href="#">Azadi ka Amrit Mahotsav</a></li>
+        <li>
+          <a href="#">IIIT Una finish off its
+         fifth convocation
+          </a>
+        </li>
+        <li>
+          <a href="#">celebrated Constitution  Day on 26, Nov.' 22
+          </a>
+        </li>
+        <li><a href="#">International Yoga Day</a></li>
+      </ul>
+      <h2>Govt Updates</h2>
+      <ul>
+        <li>
+          <a href="#">Atal Ranking of Institutions on Innovation Achievements</a>
+        </li>
+        <li><a href="#">Cybercrimes Security</a></li>
+      </ul>
+      <h2>Announcements</h2>
+      <ul>
+        <li>
+          <a href="./pdf/EoI-Stationery-Shop-01-12-22-.pdf"
+            >Expression of Interest for 
+            Running a Stationary Shop
+          </a>
+        </li>
+        <li>
+          <a href="./pdf/Microsoft Word - EOI-Hostel Assistant.docx.pdf"
+            >Hostel Assistant Recruitment … Walk-In Interview Schedule</a
+          >
+        </li>
+        <li>
+          <a href="./pdf/PhD...-Admission...Advertisment...AY-2022-23.pdf">
+            Advt. for PhD Admissions for AY 2022-23</a
+          >
+        </li>
 
-    <!-- script section -->
-    <script>
-      const counters = document.querySelectorAll(".counter-box > h2");
-      let count1 = 0;
-      let count2 = 0;
-      counters[0].innerHTML = count1;
-      counters[1].innerHTML = count2;
-      const timer1 = setInterval(() => {
-        count1 += 1;
-        counters[0].innerHTML = `${count1} +`;
-        if (count1 > 150) {
-          clearInterval(timer1);
-        }
-      }, 0);
-      const timer2 = setInterval(() => {
-        count2 += 1;
-        counters[1].innerHTML = `${(count2 * 100) / 100} %`;
-        if (count2 > 95) {
-          clearInterval(timer2);
-        }
-      }, 0);
-    </script>
+        <li>
+          <a href="./pdf/Advt.-for-the-Post-of-Director-IIIT-Una-HP.pdf">
+            Advt. for the Post of Director, IIIT Una (HP)</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--our Recruiters-->
+  <section class="marquee-section">
+    <div class="marquee-container" style="margin-bottom: 30px;">
 
-    <script>
-      let click = document.querySelector(".click");
+      <div class="partner-title">
+        <h2 style="font-size: 32px; margin-bottom: 20px;"> Our <span style="color: #f93"> Recruiters</span> </h2>
+      </div>
 
-      let list = document.querySelector(".list");
+      <marquee behavior="alternate" direction="left">
+        <img src="./Image/amazon-logo.png" alt="Natural" style="width: auto; height: 50px;" />
+       
 
-      click.addEventListener("click", () => {
-        list.classList.toggle("newlist");
-      });
-    </script>
-  </body>
+      </marquee>
+    </div>
+  </section>
+
+
+
+  <!-- footer section starts -->
+
+  <footer style="background:url(Image/Speedline-50s-1846px.svg)">
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <span>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY UNA</span>
+        </div>
+
+      </div>
+
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">About</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="index.html">About us</a></li>
+          <li><a href="labs.html">Labs</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Quick Links</li>
+          <li><a href="https://pgportal.gov.in/">CPGRAMS Portal</a></li>
+          <li><a href="campuslife.html">Campus Life</a></li>
+          <li><a href="reach.html">How to Reach</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Student's Corner</li>
+
+          <li><a href="complaint.html">Complaint Section</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="placement.html">Placement</a></li>
+
+        </ul>
+        <ul class="box input-box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.5655687846292!2d76.18850141440156!3d31.48113465622981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391adb198180014f%3A0xbf76347093a3aa9a!2sIndian%20Institute%20of%20Information%20Technology%20(IIIT)%20Una!5e0!3m2!1sen!2sin!4v1667841204364!5m2!1sen!2sin"
+            style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2022 | Designed by Sharad Kumar</span>
+        class="policy_terms">
+
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!--footer section ends -->
+<script>
+  const navbarMenu = document.getElementById("navbar");
+const burgerMenu = document.getElementById("burger");
+const overlayMenu = document.querySelector(".overlay");
+
+const toggleMenu = () => {
+   navbarMenu.classList.toggle("active");
+   overlayMenu.classList.toggle("active");
+};
+const collapseSubMenu = () => {
+   navbarMenu
+      .querySelector(".menu-dropdown.active .submenu")
+      .removeAttribute("style");
+   navbarMenu.querySelector(".menu-dropdown.active").classList.remove("active");
+};
+const toggleSubMenu = (e) => {
+   if (e.target.hasAttribute("data-toggle") && window.innerWidth <= 992) {
+      e.preventDefault();
+      const menuDropdown = e.target.parentElement;
+      if (menuDropdown.classList.contains("active")) {
+         collapseSubMenu();
+      } else {
+         if (navbarMenu.querySelector(".menu-dropdown.active")) {
+            collapseSubMenu();
+         }
+         menuDropdown.classList.add("active");
+         const subMenu = menuDropdown.querySelector(".submenu");
+         subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+      }
+   }
+};
+const resizeWindow = () => {
+   if (window.innerWidth > 992) {
+      if (navbarMenu.classList.contains("active")) {
+         toggleMenu();
+      }
+      if (navbarMenu.querySelector(".menu-dropdown.active")) {
+         collapseSubMenu();
+      }
+   }
+};
+burgerMenu.addEventListener("click", toggleMenu);
+overlayMenu.addEventListener("click", toggleMenu);
+navbarMenu.addEventListener("click", toggleSubMenu);
+window.addEventListener("resize", resizeWindow);
+
+</script>
+</body>
+
 </html>

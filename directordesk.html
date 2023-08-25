@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Director Desk</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="nav.js">
+  <style>
+    #director {
+      height: 80vh;
+      margin-top: 50px;
+    }
+
+    .container {
+
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      height: 60vh;
+      margin: auto;
+      width: 80%;
+      box-shadow: none;
+
+    }
+
+    .image {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .content {
+      flex: 2;
+      padding-left: 20px;
+      border-left: 2px solid #333;
+    }
+
+    .content h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        text-align: justify;
+        border: 1px solid white;
+        border-radius: 0px;
+        /* box-shadow: none; */
+      }
+
+      #director {
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .image,
+      .content {
+        padding: 20px 0;
+        border: none;
+      }
+
+      .content p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+    }
+
+    .directorheading {
+      font-size: 20px;
+      text-align: center;
+      padding: 20px;
+
+    }
+
+    .director-heading {
+      font-size: 30px;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .director-heading {
+        font-size: 25px;
+      }
+
+      .directorheading {
+        font-size: 22px;
+        text-align: center;
+        padding: 20px;
+        margin-left: -10px;
+        margin-top: 20px;
+      }
+      
+      .content p {
+        font-size: 18px;
+        
+      }
+    }
+  </style>
+</head>
+
+<body>
+ 
+  <header class="header" id="header">
+    <section class="wrapper nav">
+       <a href="./index.html" class="brand"><img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Iiit-una-logo.png" alt="" style="height: 60px;"><p>भारतीय सूचना प्रौद्योगिकी संस्थान ऊना</p></a>
+       <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+       </div>
+       <span class="overlay"></span>
+       <nav class="navbar" id="navbar">
+          <ul class="menu" id="menu">
+             <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+             <li class="menu-item menu-dropdown">
+                <span class="menu-link" data-toggle="submenu">About<i class="bx bx-chevron-down"></i></span>
+                <ul class="submenu">
+                   <li class="submenu-item"><a href="campus.html" class="submenu-link">Campus</a></li>
+                   <li class="submenu-item"><a href="labs.html" class="submenu-link">Labs</a></li>
+                   <li class="submenu-item"><a href="academics.html" class="submenu-link">Academics</a></li>
+                   <li class="submenu-item"><a href="placement.html" class="submenu-link">Placement</a></li>
+                </ul>
+             </li>
+             <li class="menu-item menu-dropdown">
+                <span class="menu-link" data-toggle="submenu">Department<i class="bx bx-chevron-down"></i></span>
+                <ul class="submenu">
+                  <li class="submenu-item"><a href="courses.html" class="submenu-link">Courses</a></li>
+     
+                </ul>
+             </li>
+             <li class="menu-item menu-dropdown">
+                <span class="menu-link" data-toggle="submenu">Campus<i class="bx bx-chevron-down"></i></span>
+                <ul class="submenu">
+                   <li class="submenu-item"><a href="studentactivity.html" class="submenu-link">Students Activity</a></li>
+                   <li class="submenu-item"><a href="hostels.html" class="submenu-link">Hostels</a></li>
+                  
+                </ul>
+             </li>
+             <li class="menu-item menu-dropdown">
+              <span class="menu-link" data-toggle="submenu">Contact<i class="bx bx-chevron-down"></i></span>
+              <ul class="submenu">
+                 <li class="submenu-item"><a href="complaint.html" class="submenu-link">Complaint</a></li>
+                 <li class="submenu-item"><a href="reach.html" class="submenu-link">How to Reach</a></li>
+                 <li class="submenu-item"><a href="contact.html" class="submenu-link">Contact Directory</a></li>
+              </ul>
+           </li>
+             <!-- <li class="menu-item"><a href="#" class="menu-link">Contact</a></li> -->
+          </ul>
+       </nav>
+    </section>
+ </header>
+ 
+  <!-- Parallex Effect starts  -->
+  <section>
+    <div class="paralex-body">
+      <div class="paralex-head paralex-images">
+        <div class="paralex-text">
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="director">
+    <div class="directorheading">
+      <h1 class="director-heading">Director's Desk</h1>
+    </div>
+    <div class="container">
+      <div class="image">
+        <img src="./Image/director.jpg" alt="Image">
+      </div>
+      <div class="content">
+        <h2>Prof. S. Selvakumar</h2>
+        <p>Our Institute was established in the year 2014-15 as an Institute of National Importance under the MoE, GoI,
+          by an IIIT (PPP) Act of Parliament No. 23 of 2017.
+
+          I assumed charge as the Founder Director of this Institute on 05, July 2018.
+
+          Prior to joining, I was invited to attend the Governing Body Meeting of the Institute in the Office of
+          Additional Secretary, MoE, as the Director designate and special invitee in which Master Plan of the Institute
+          was scheduled to be approved.
+
+          As the Master Plan was prepared without the user requirement specification from the Institute, the approval of
+          the Master Plan was deferred. Then the architects prepared the Master Plan based on the user requirement
+          specification given by the Institute and got approved.
+        </p>
+      
+      </div>
+    </div>
+  </section>
+ 
+<footer style="background:url(Image/Speedline-50s-1846px.svg)">
+  <div class="content">
+    <div class="top">
+      <div class="logo-details">
+        <span>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY UNA</span>
+      </div>
+     
+    </div>
+    
+    <div class="link-boxes">
+      <ul class="box">
+        <li class="link_name">About</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="index.html">About us</a></li>
+        <li><a href="labs.html">Labs</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Quick Links</li>
+        <li><a href="https://pgportal.gov.in/">CPGRAMS Portal</a></li>
+        <li><a href="campuslife.html">Campus Life</a></li>
+        <li><a href="reach.html">How to Reach</a></li>
+      </ul>
+      <ul class="box">
+       <li class="link_name">Student's Corner</li>
+       
+       <li><a href="complaint.html">Complaint Section</a></li>
+       <li><a href="academics.html">Academics</a></li>
+       <li><a href="placement.html">Placement</a></li>
+       
+     </ul> 
+      <ul class="box input-box">
+       <iframe
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.5655687846292!2d76.18850141440156!3d31.48113465622981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391adb198180014f%3A0xbf76347093a3aa9a!2sIndian%20Institute%20of%20Information%20Technology%20(IIIT)%20Una!5e0!3m2!1sen!2sin!4v1667841204364!5m2!1sen!2sin"
+      
+       style="border: 0"
+       allowfullscreen=""
+       loading="lazy"
+       referrerpolicy="no-referrer-when-downgrade"
+     ></iframe>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright © 2022 | Designed by Sharad Kumar</span>
+      
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navbarMenu = document.getElementById("navbar");
+const burgerMenu = document.getElementById("burger");
+const overlayMenu = document.querySelector(".overlay");
+
+const toggleMenu = () => {
+   navbarMenu.classList.toggle("active");
+   overlayMenu.classList.toggle("active");
+};
+const collapseSubMenu = () => {
+   navbarMenu
+      .querySelector(".menu-dropdown.active .submenu")
+      .removeAttribute("style");
+   navbarMenu.querySelector(".menu-dropdown.active").classList.remove("active");
+};
+const toggleSubMenu = (e) => {
+   if (e.target.hasAttribute("data-toggle") && window.innerWidth <= 992) {
+      e.preventDefault();
+      const menuDropdown = e.target.parentElement;
+      if (menuDropdown.classList.contains("active")) {
+         collapseSubMenu();
+      } else {
+         if (navbarMenu.querySelector(".menu-dropdown.active")) {
+            collapseSubMenu();
+         }
+         menuDropdown.classList.add("active");
+         const subMenu = menuDropdown.querySelector(".submenu");
+         subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+      }
+   }
+};
+const resizeWindow = () => {
+   if (window.innerWidth > 992) {
+      if (navbarMenu.classList.contains("active")) {
+         toggleMenu();
+      }
+      if (navbarMenu.querySelector(".menu-dropdown.active")) {
+         collapseSubMenu();
+      }
+   }
+};
+burgerMenu.addEventListener("click", toggleMenu);
+overlayMenu.addEventListener("click", toggleMenu);
+navbarMenu.addEventListener("click", toggleSubMenu);
+window.addEventListener("resize", resizeWindow);
+
+</script>
+</body>
+
+</html>

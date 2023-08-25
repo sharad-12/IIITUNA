@@ -5,85 +5,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Hostels</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="nav.js">
+<link rel="stylesheet" href="nav.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
 
     <style>
-        .container-row {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 20px;
-            width: 80%;
-
-            margin: auto;
-        }
-
         .container {
-            text-align: center;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            border: 1px solid white;
-            border-radius: 0px;
+            display: flex;
+            width: 80%;
+            margin: auto;
+            margin-top: 40px;
 
+            padding: 20px;
+            background-color: #f9f9ff;
+            border: 1px solid #ccc;
+            border-radius: 0px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
 
-        .icon {
-            font-size: 36px;
+        .left-image {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .left-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .right-content {
+            flex: 2;
+        }
+
+        h2 {
+            text-align: left;
+            margin-top: 20px;
+            font-size: 25px;
             margin-bottom: 10px;
         }
 
-        p {
-            font-size: 17px;
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 18px;
+            margin-bottom: 5px;
         }
 
         @media (max-width: 768px) {
-            .container-row {
-                flex-direction: column;
-            }
-        }
-
-
-        @media (max-width: 768px) {
-            .contact-row {
+            .container {
                 flex-direction: column;
                 width: 90%;
+
+            }
+
+            li {
+                font-size: 17px;
+
+                margin-bottom: 5px;
+
+            }
+
+
+            .left-image {
+                margin-right: 0;
+            }
+
+            ul {
+                list-style: disc;
+                margin-left: -10px;
+            }
+
+            h2 {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 25px;
+                margin-bottom: 10px;
             }
         }
 
-        .contactheading {
+
+
+        .hostelheading {
             font-size: 20px;
             text-align: center;
             padding: 20px;
+            margin-top: 80PX;
 
         }
 
-        .contact-heading {
+        .hostel-heading {
             font-size: 30px;
             line-height: 1.2;
             margin: 0;
         }
 
         @media (max-width: 768px) {
-            .contact-heading {
+            .hostel-heading {
                 font-size: 25px;
             }
 
-            .contactheading {
-                font-size: 22px;
+            .hostelheading {
+                font-size: 25px;
                 text-align: center;
                 padding: 20px;
                 margin-left: -10px;
-                margin-top: 20px;
+                margin-top: 80px;
             }
+        }
+
+
+
+        #Assistant {
+            padding: 8vw 8vw 0 8vw;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        #Assistant .expert-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 1rem;
+            margin-top: 50px;
+        }
+
+        #Assistant .expert-box .profile {
+            background: #fff3f3;
+            padding: 30px 10px;
+        }
+
+        .expert-box img {
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        .pro-links {
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -149,47 +216,152 @@
     </header>
 
 
-    <section>
-        <div class="paralex-body">
-            <div class="paralex-head paralex-images">
-                <div class="paralex-text">
+    <section id="cont">
+        <div class="hostelheading">
+            <h1 class="hostel-heading">Hostels & Guest House</h1>
+        </div>
+        <div class="container">
+            <div class="left-image"><br><br>
+                <img src="./Image/hospital.jpg" alt="Image">
+            </div>
+            <div class="right-content"><br>
+                <h2>Hospital</h2>
+                <ul>
+                    <li> ▪️ Availability of emergency medical care 24/7.</li>
+                    <li> ▪️ General medical consultations and specialized services.</li>
+                    <li> ▪️ Coordination with local emergency services.</li>
+                    <li> ▪️ Access to doctors, nurses, and medical staff.</li>
+                    <li> ▪️ On-campus ambulance services for quick patient transportation. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left-image"><br><br>
+                <img src="./Image/transit house.jpg" alt="Image">
+            </div>
+            <div class="right-content"><br>
+                <h2>Transit House</h2>
+                <ul>
+                    <li>▪️ Facilities, cleanliness, and safety of student housing. </li>
+                    <li>▪️ Emergency response protocols and campus security services. </li>
+                    <li>▪️ Sports facilities like gymnasiums, outdoor fields, swimming pools, etc.</li>
+                    <li>▪️ Availability of Wi-Fi across Hostel.</li>
+                    <li>▪️ Green spaces, gardens, and outdoor seating areas</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left-image"><br><br>
+                <img src="./Image/chitagnihostel.jpg" alt="Image">
+            </div>
+            <div class="right-content"><br>
+                <h2>Chitagni hostel</h2>
+                <ul>
+                    <li>▪️ Facilities, cleanliness, and safety of student housing. </li>
+                    <li>▪️ Emergency response protocols and campus security services. </li>
+                    <li>▪️ Sports facilities like gymnasiums, outdoor fields, swimming pools, etc.</li>
+                    <li>▪️ Availability of Wi-Fi across Hostel.</li>
+                    <li>▪️ Green spaces, gardens, and outdoor seating areas</li>
+                </ul>
+            </div>
+        </div>
 
-
-                </div>
+        <div class="container">
+            <div class="left-image"><br><br>
+                <img src="./Image/jathragni.jpg" alt="Image">
+            </div>
+            <div class="right-content"><br>
+                <h2>Jhatragni hostel</h2>
+                <ul>
+                    <li>▪️ Facilities, cleanliness, and safety of student housing. </li>
+                    <li>▪️ Emergency response protocols and campus security services. </li>
+                    <li>▪️ Sports facilities like gymnasiums, outdoor fields, swimming pools, etc.</li>
+                    <li>▪️ Availability of Wi-Fi across Hostel.</li>
+                    <li>▪️ Green spaces, gardens, and outdoor seating areas</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left-image">
+                <img src="./Image/chitagnihostel.jpg" alt="Image">
+            </div>
+            <div class="right-content">
+                <h2>Bhutagni Hostel</h2>
+                <ul>
+                    <li>▪️ Facilities, cleanliness, and safety of student housing. </li>
+                    <li>▪️ Emergency response protocols and campus security services. </li>
+                    <li>▪️ Sports facilities like gymnasiums, outdoor fields, swimming pools, etc.</li>
+                    <li>▪️ Availability of Wi-Fi across Hostel.</li>
+                    <li>▪️ Green spaces, gardens, and outdoor seating areas</li>
+                </ul>
             </div>
         </div>
     </section>
-    <div class="contactheading">
-        <h1 class="contact-heading">Contact Us</h1>
-    </div>
-    </div>
-    <div class="container-row">
-        <div class="container">
-            <div class="icon"><i class="fas fa-phone"></i></div>
-            <p>Mobile: (+91) 98370-12205 <br>Mobile: (+91) 95556-98585</p>
 
+
+
+    <section id="Assistant">
+        <h1>HOSTELS ASSISTANT</h1>
+
+        <div class="expert-box">
+            <div class="profile">
+                <img src="./image/sunny.jpg" alt="">
+                <h4>Mr. Sunny</h4>
+                <p>Hostel Attendant</p>
+
+            </div>
+            <div class="profile">
+                <img src="./image/BELI.jpg" alt="">
+                <h4>Mr. Beliram</h4>
+                <p>Hostel Attendant</p>
+
+            </div>
+            <div class="profile">
+                <img src="./image/image6.jpg" alt="">
+                <h4>Mr. Goldy</h4>
+                <p>Hostel Attendant</p>
+
+            </div>
+            <div class="profile">
+                <img src="./image/Shivam-HA.jpeg" alt="">
+                <h4>Mr. Shivam Rai</h4>
+                <p>Hostel Assistant</p>
+
+            </div>
+            <div class="profile">
+                <img src="./image/Hari-Om.jpg" alt="">
+                <h4>Mr. Hari Om</h4>
+                <p>Hostel Assistant</p>
+
+            </div>
+            <div class="profile">
+                <img src="./image/Kuldeep-Singh.jpeg" alt="">
+                <h4>Mr. Kuldeep Singh</h4>
+                <p>Hostel Assistant</p>
+
+            </div>
+            <div class="profile">
+                <img src="./image/Chetan-Katnoria.jpeg" alt="">
+                <h4>Mr. Chetan Katnoria</h4>
+                <p>Hostel Assistant</p>
+
+
+            </div>
+            <div class="profile">
+                <img src="./image/jagjit.jpeg" alt="">
+                <h4>Mr. Jagjit Singh Maan</h4>
+                <p>Hostel Assistant</p>
+
+            </div>
         </div>
-
-        <div class="container">
-            <div class="icon"><i class="fas fa-envelope"></i></div>
-            <p>ankur@iiitu.ac.in <br>namangarg@iiitu.ac.in</p>
-        </div>
-
-        <div class="container">
-            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-            <p>Indian Institute of Information Technology<br> Una
-
-                Saloh (HP) - 177209
-            </p>
-        </div>
-    </div>
+    </section>
     <!-- footer section starts -->
 
     <footer style="background:url(Image/Speedline-50s-1846px.svg)">
         <div class="content">
           <div class="top">
             <div class="logo-details">
-              <span>INDIAN INSTITUTE OF INFORMATION <br> TECHNOLOGY UNA</span>
+              <span>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY UNA</span>
             </div>
            
           </div>
@@ -231,13 +403,14 @@
         <div class="bottom-details">
           <div class="bottom_text">
             <span class="copyright_text">Copyright © 2022 | Designed by Sharad Kumar</span>
-             
+              
             </span>
           </div>
         </div>
       </footer>
 
     <!--footer section ends -->
+
 
     <script>
         const navbarMenu = document.getElementById("navbar");
@@ -286,7 +459,6 @@
       window.addEventListener("resize", resizeWindow);
       
       </script>
-
 </body>
 
 </html>

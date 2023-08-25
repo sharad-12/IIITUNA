@@ -1,174 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Placement-statics</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/3c880d7cdd.js"
-      crossorigin="anonymous"
-    ></script>
-    <style>
-      .placement {
-        border: 1px solid;
-        text-align: center;
-        color: white;
-        background-color: #01579b;
-        border-radius: 20px;
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placement</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="nav.js">
+  <style>
+    .placementheading {
+      font-size: 20px;
+      text-align: center;
+      padding: 20px;
+      margin-top: 80px;
+
+
+    }
+
+    .placement-heading {
+      font-size: 30px;
+      line-height: 1.2;
+      margin: 0;
+      margin-top: 80px;
+    }
+
+    @media (max-width: 768px) {
+      .placement-heading {
         font-size: 25px;
-        border-width: 20%;
-        margin-top: 30px;
-        margin-left: 40px;
+      }
+
+      .placementheading {
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+        /* margin-left: -10px; */
+        margin-top: 60px;
+      }
+    }
+
+    .placement {
+      width: 75%;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      padding: 4px;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      height: 180vh;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    thead th {
+      background-color: #f5f5f5;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .image-placement img {
+      width: 60%;
+      height: 50vh;
+      margin: auto;
+      margin-top: 40px;
+      padding: 10px;
+      align-items: center;
+    }
+
+    .heading-academic {
+      height: 50px;
+      background-color: #00237D;
+      padding: 5px;
+      border-radius: 30px;
+      color: white;
+      margin-top: 80px;
+      width: 60%;
+      margin: auto;
+      margin-top: 30px;
+
+      /* margin: auto; */
+    }
+
+    @media (max-width: 768px) {
+      .placement {
         width: 90%;
-        padding: 0px;
+        height: auto;
       }
 
-      #place {
-        height: 200vh;
-            width: 80vw;
-            align-items: center;
-            margin: auto;
-            width: 75%;
-            padding: 10px;
-        
+
+      h1 {
+        text-align: center;
+        font-size: 25px;
+
+        margin-bottom: 20px;
       }
 
-      .center {
-        display: block;
-        margin-left: 80px;
-        margin-right: auto;
-        margin-top: 30px;
+      h2 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 10px;
       }
 
-      .place-image {
-        margin: 50px 0px 20px 90px;
-        width: 80%;
-        height: 20%;
+      .image-placement img {
+        width: 100%;
+        height: 20vh;
+        margin: auto;
+        padding: 10px;
+        align-items: center;
       }
 
       table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 80%;
-        font-size: 15px;
-        margin-top: 40px;
-        margin-left: 90px;
-      }
+        font-size: 13px;
 
-      td,
-      th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
       }
+    }
+  </style>
+</head>
 
-      tr:nth-child(1) {
-        background-color: #dddddd;
-      }
-      #experts {
-  padding: 8vw 8vw 0 8vw;
-  text-align: center;
-  margin-bottom: 50px;
-}
-#experts .expert-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 1rem;
-  margin-top: 50px;
-}
-#experts .expert-box .profile {
-  background: #fff3f3;
-  padding: 30px 10px;
-}
-.expert-box img {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-}
-.pro-links {
-  margin-top: 10px;
-}
-.pro-links i {
-  padding: 10px 13px;
-  /* border: 1px solid rgb(21, 21, 100); */
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-.pro-links i:hover {
-  background: rgb(21, 21, 100);
-  color: white;
-  border: 1px solid rgb(21, 21, 100);
-}
-    </style>
-  </head>
+<body>
 
-  <body>
-       
-    <nav class="new-nav">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/en/c/cf/Iiit-una-logo.png"
-        alt="iiit una"
-      />
-      <div class="name">
-        <h1>भारतीय सूचना प्रौद्योगिकी संस्थान, ऊना</h1>
-        <h3>Indian Institute of Information Technology, Una</h3>
+  <header class="header" id="header">
+    <section class="wrapper nav">
+      <a href="./index.html" class="brand"><img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Iiit-una-logo.png"
+          alt="" style="height: 60px;"><p>भारतीय सूचना प्रौद्योगिकी संस्थान ऊना</p></a>
+      <div class="burger" id="burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
       </div>
-      <img
-        src="https://www.iitb.ac.in/sites/www.iitb.ac.in/themes/touchm/logo_75.png"
-        alt="azadi ka amrit mahotsav"
-      />
-    </nav>
-    <div class="new-nav-links">
-      <!-- <a href="index.html" class="nav-link">HOME</a> -->
-      <div class="dropdown">
-        <button class="dropbtn"><a href="index.html"> HOME</a></button>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">ABOUT</button>
-        <div class="dropdown-content">
-          <a href="campus.html">Campus</a>
-      
-          <a href="lab.html">Labs</a>
-          <a href="campuslife.html">Student life</a>
-          <a href="academics.html">Academics</a>
-         
-          <a href="placement.html">Placement</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn"><a href="courses.html">DEPARTMENT</a> </button>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn"><a href="">CAMPUS</a> </button>
-        <div class="dropdown-content">
-          <a href="studentactivity.html">Student Activities</a>
-          <a href="hostel.html">Hostels</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn"><a href="icscs.html">ICIC3S</a> </button>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">CONTACT</button>
-        <div class="dropdown-content">
-          <a href="complaint.html">Complaint</a>
-          <a href="reach.html">How to reach</a>
-          <a href="contact.html">Contact Directory</a>
-         
-        </div>
-      </div>
-      
+      <span class="overlay"></span>
+      <nav class="navbar" id="navbar">
+        <ul class="menu" id="menu">
+          <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+          <li class="menu-item menu-dropdown">
+            <span class="menu-link" data-toggle="submenu">About<i class="bx bx-chevron-down"></i></span>
+            <ul class="submenu">
+              <li class="submenu-item"><a href="campus.html" class="submenu-link">Campus</a></li>
+              <li class="submenu-item"><a href="p.placement-heading.html" class="submenu-link">Labs</a></li>
+              <li class="submenu-item"><a href="academics.html" class="submenu-link">Academics</a></li>
+              <li class="submenu-item"><a href="placement.html" class="submenu-link">Placement</a></li>
+            </ul>
+          </li>
+          <li class="menu-item menu-dropdown">
+            <span class="menu-link" data-toggle="submenu">Department<i class="bx bx-chevron-down"></i></span>
+            <ul class="submenu">
+              <li class="submenu-item"><a href="courses.html" class="submenu-link">Courses</a></li>
+
+            </ul>
+          </li>
+          <li class="menu-item menu-dropdown">
+            <span class="menu-link" data-toggle="submenu">Campus<i class="bx bx-chevron-down"></i></span>
+            <ul class="submenu">
+              <li class="submenu-item"><a href="studentactivity.html" class="submenu-link">Students Activity</a></li>
+              <li class="submenu-item"><a href="hostels.html" class="submenu-link">Hostels</a></li>
+
+            </ul>
+          </li>
+          <li class="menu-item menu-dropdown">
+            <span class="menu-link" data-toggle="submenu">Contact<i class="bx bx-chevron-down"></i></span>
+            <ul class="submenu">
+              <li class="submenu-item"><a href="complaint.html" class="submenu-link">Complaint</a></li>
+              <li class="submenu-item"><a href="reach.html" class="submenu-link">How to Reach</a></li>
+              <li class="submenu-item"><a href="contact.html" class="submenu-link">Contact Directory</a></li>
+            </ul>
+          </li>
+          <!-- <li class="menu-item"><a href="#" class="menu-link">Contact</a></li> -->
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <div class="placementheading">
+    <h1 class="p.placement-heading">About Placement </h1>
+
+  </div>
+  <div class="placement">
+    <div class="heading-academic">
+      <h1>GET IN TOUCH</h1>
     </div>
-    <section id="place">
-      <h1 class="placement">Get In Touch</h1>
-      <table>
+    <table>
+      <thead>
         <tr>
           <th>CDC</th>
           <th>EMAIL</th>
           <th>CONTACT</th>
         </tr>
+      </thead>
+      <tbody>
         <tr>
           <td>Dr.G.S Grewal</td>
           <td>tpo@iiitu.ac.in</td>
@@ -184,99 +225,118 @@
           <td>ashnajacob@iiitu.ac.in</td>
           <td>9617427727</td>
         </tr>
-      </table>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+    <div class="heading-academic">
+      <h1>PLACEMENT STATISTICS</h1>
+    </div>
+    <div class="image-placement">
+      <img src="./Image/place.jpeg" alt="Image">
+    </div>
+    <div class="heading-academic">
+      <h1>RECRUITERS</h1>
+    </div>
+    <div class="image-placement">
+      <img src="./Image/OUR-RECRUITERS-IIIT-UNA.png" alt="Image">
+    </div>
+  </div>
 
-      <h1 class="placement">Placement Statistics</h1>
-      <div class="place-statics">
-        <img src="./images/place.jpeg" alt="" class="place-image" />
-        <h1 class="placement">Our Recruiters</h1>
-        <img
-          src="./images/OUR-RECRUITERS-IIIT-UNA.png"
-          alt=""
-          height="500px"
-          width="80%"
-          class="center"
-        />
-      </div>
-    </section>
-    <section id="experts">
-      <h1>OUR TPR</h1>
-   
-      <div class="expert-box">
-         
-          <div class="profile">
-              <img src="./images/abhay.jpg" alt="">
-              <h4>Mr. Abhay Saini</h4>
-              <p></p>
-             
-          </div>
-         
-          <div class="profile">
-              <img src="./images/nikhil.jpg" alt="">
-              <h4>Mr. Nikhil Bhatia</h4>
-            
-             
-          </div>
-      
-      </div>
-  </section>
-
-  <footer style="background: url(Speedline-50s-1846px.svg)">
+  <footer style="background:url(Image/Speedline-50s-1846px.svg)">
     <div class="content">
       <div class="top">
         <div class="logo-details">
           <span>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY UNA</span>
         </div>
-        <div class="media-icons">
-          <a href="https://www.facebook.com/iiituna" target="_blank"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a href=""><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://instagram.com/iiituna_" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="https://linkedin.com/" target="_blank"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </div>
+
       </div>
+
       <div class="link-boxes">
         <ul class="box">
           <li class="link_name">About</li>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="contact.html">CONTACT US</a></li>
-          <li><a href="#about-section">ABOUT US</a></li>
-          <li><a href="lab.html">LABS</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="index.html">About us</a></li>
+          <li><a href="labs.html">Labs</a></li>
         </ul>
         <ul class="box">
           <li class="link_name">Quick Links</li>
-          <li>
-            <a href="https://pgportal.gov.in/"
-              >CPGRAMS PORTAL</a
-            >
-          </li>
-          <li><a href="campuslife.html">CAMPUS LIFE</a></li>
-          <li><a href="reach.html">HOW TO REACH</a></li>
+          <li><a href="https://pgportal.gov.in/">CPGRAMS Portal</a></li>
+          <li><a href="campuslife.html">Campus Life</a></li>
+          <li><a href="reach.html">How to Reach</a></li>
         </ul>
         <ul class="box">
           <li class="link_name">Student's Corner</li>
-          <li><a href="complaint.html">COMPLAINT SECTION</a></li>
-          <li><a href="academics.html">ACADEMICS</a></li>
-          <li><a href="placement.html">PLACEMENT</a></li>
+
+          <li><a href="complaint.html">Complaint Section</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="placement.html">Placement</a></li>
+
         </ul>
-        <ul class="box-1">
+        <ul class="box input-box">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.5655687846292!2d76.18850141440156!3d31.48113465622981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391adb198180014f%3A0xbf76347093a3aa9a!2sIndian%20Institute%20of%20Information%20Technology%20(IIIT)%20Una!5e0!3m2!1sen!2sin!4v1667841204364!5m2!1sen!2sin"
-            width="350"
-            height="250"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </ul>
       </div>
     </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2022 | Designed by Sharad Kumar</span>
+        class="policy_terms">
+         
+        </span>
+      </div>
+    </div>
   </footer>
-  </body>
+  
+<script>
+  const navbarMenu = document.getElementById("navbar");
+const burgerMenu = document.getElementById("burger");
+const overlayMenu = document.querySelector(".overlay");
+
+const toggleMenu = () => {
+   navbarMenu.classList.toggle("active");
+   overlayMenu.classList.toggle("active");
+};
+const collapseSubMenu = () => {
+   navbarMenu
+      .querySelector(".menu-dropdown.active .submenu")
+      .removeAttribute("style");
+   navbarMenu.querySelector(".menu-dropdown.active").classList.remove("active");
+};
+const toggleSubMenu = (e) => {
+   if (e.target.hasAttribute("data-toggle") && window.innerWidth <= 992) {
+      e.preventDefault();
+      const menuDropdown = e.target.parentElement;
+      if (menuDropdown.classList.contains("active")) {
+         collapseSubMenu();
+      } else {
+         if (navbarMenu.querySelector(".menu-dropdown.active")) {
+            collapseSubMenu();
+         }
+         menuDropdown.classList.add("active");
+         const subMenu = menuDropdown.querySelector(".submenu");
+         subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+      }
+   }
+};
+const resizeWindow = () => {
+   if (window.innerWidth > 992) {
+      if (navbarMenu.classList.contains("active")) {
+         toggleMenu();
+      }
+      if (navbarMenu.querySelector(".menu-dropdown.active")) {
+         collapseSubMenu();
+      }
+   }
+};
+burgerMenu.addEventListener("click", toggleMenu);
+overlayMenu.addEventListener("click", toggleMenu);
+navbarMenu.addEventListener("click", toggleSubMenu);
+window.addEventListener("resize", resizeWindow);
+
+</script>
+</body>
+
 </html>
